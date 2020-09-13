@@ -1,0 +1,22 @@
+.button {
+    font-size: 20px;
+    background-color: rgb(207, 204, 204);
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.button:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
