@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #Tennisball {
+      animation: Up_and_down infinite 2s linear;
+      
+    }
+  }
+
+@keyframes Up_and_down {
+    0% {
+      transform: translateY(50px);
+    }
+    50% {
+      transform: translateY(-90px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
