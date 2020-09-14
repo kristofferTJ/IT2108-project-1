@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Tabs from "./components/Tabs/Tabs";
 import { tabsContext } from './components/Tabs/TabContext';
+import Basket from './components/Installations/Basket';
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
   return (
     <div className="App">
       <div>{getImage[0][activeTab-1]}</div>
+      <Header></Header>
+      <Basket></Basket>
       <tabsContext.Provider value={{ activeTab, setActiveTab }}>
       <Tabs></Tabs>
       <div>{activeTab}</div>

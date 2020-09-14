@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #Man {
+      animation: Football-spin infinite 3s linear;
+      
+    }
+  }
+
+@keyframes Football-spin {
+    0% {
+      transform: translateY(100px);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
