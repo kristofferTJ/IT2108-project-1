@@ -10,13 +10,13 @@ function Sidebar() {
     <div className="menu">
       <div className="pictureContainer">
         <h4>Picture</h4>
-        <button className="button" onClick={() => imgProvider.setActiveImg(0)}>
+        <button className="button" onClick={() => imgProvider.setActiveImg(1)}>
           Sport
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(1)}>
+        <button className="button" onClick={() => imgProvider.setActiveImg(2)}>
           Work
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(2)}>
+        <button className="button" onClick={() => imgProvider.setActiveImg(3)}>
           {' '}
           Chill
         </button>
@@ -26,19 +26,19 @@ function Sidebar() {
         <h4>Sound</h4>
         <button
           className="button"
-          onClick={() => soundProvider.setActiveSound(0)}
+          onClick={() => soundProvider.setActiveSound(1)}
         >
-          Sound 1
+          Dyr
         </button>
         <button
           className="button"
-          onClick={() => soundProvider.setActiveSound(1)}
+          onClick={() => soundProvider.setActiveSound(2)}
         >
           Sound 2
         </button>
         <button
           className="button"
-          onClick={() => soundProvider.setActiveSound(2)}
+          onClick={() => soundProvider.setActiveSound(3)}
         >
           Sound 3
         </button>
@@ -47,19 +47,19 @@ function Sidebar() {
         <h4>Poem</h4>
         <button
           className="button"
-          onClick={() => poemProvider.setActivePoem(0)}
+          onClick={() => poemProvider.setActivePoem(1)}
         >
           Poem 1
         </button>
         <button
           className="button"
-          onClick={() => poemProvider.setActivePoem(1)}
+          onClick={() => poemProvider.setActivePoem(2)}
         >
           Poem 2
         </button>
         <button
           className="button"
-          onClick={() => poemProvider.setActivePoem(2)}
+          onClick={() => poemProvider.setActivePoem(3)}
         >
           Poem 3
         </button>

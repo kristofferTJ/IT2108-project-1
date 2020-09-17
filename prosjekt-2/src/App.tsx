@@ -5,9 +5,8 @@ import { GlobalStateContext } from './context/GlobalStateContext';
 import './App.css';
 import Tabs from './components/Tabs/Tabs';
 import { tabsContext } from './components/Tabs/TabContext';
-import Birthday from './components/Installations/Birthday';
 import Header from './components/Header/Header';
-
+import Main from './Main';
 
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
@@ -16,32 +15,28 @@ function App() {
   const [activeTab, setActiveTab] = useState(1);
 
   const favoritt = () => {
-    localStorage.setItem('favoritt', activeTab.toString());
+    localStorage.setItem('favorittTab', activeTab.toString());
+    localStorage.setItem('FavorittMenu', imgProvider.activeImg.toString());
   };
 
   const getFavoritt = () => {
-    setActiveTab(Number(localStorage.getItem('favoritt')));
-    return favoritt;
+    setActiveTab(Number(localStorage.getItem('favorittTab')));
+    imgProvider.setActiveImg(Number(localStorage.getItem('FavorittMenu')));
   };
 
-  const getImage = [
-    ['bilde 1 her', 'Bilde 2', 'Bilde 3'],
-    [1, 2, 3],
-    [1, 2, 3],
-  ];
 
   return (
     <div className="App">
-      <div>{getImage[0][activeTab-1]}</div>
       <Header></Header>
-      <Birthday></Birthday>
       <tabsContext.Provider value={{ activeTab, setActiveTab }}>
+        <div className="Sidebar">
+        <div className="Main"><Main></Main></div>
+        <Sidebar></Sidebar>
+        </div>
         <Tabs></Tabs>
-        <div>{activeTab}</div>
       </tabsContext.Provider>
-      <button onClick={favoritt}>Favoritt</button>
-      <button onClick={getFavoritt}>Få favoritt</button>
-      <Sidebar></Sidebar>
+      <button onClick={favoritt}>Lagre som favorittbilde</button>
+      <button onClick={getFavoritt}>Få favorittbilde</button>
       <p>bilde: {imgProvider.activeImg}</p>
       <p>lyd: {soundProvider.activeSound}</p>
       <p>dikt: {poemProvider.activePoem}</p>
