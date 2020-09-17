@@ -6,6 +6,7 @@ import { GlobalStateContext } from './context/GlobalStateContext';
 import './App.css';
 import Tabs from './components/Tabs/Tabs';
 import { tabsContext } from './components/Tabs/TabContext';
+import Birthday from './components/Installations/Birthday';
 
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
@@ -32,6 +33,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <div>{getImage[0][activeTab - 1]}</div>
+
       <tabsContext.Provider value={{ activeTab, setActiveTab }}>
         <Tabs></Tabs>
         <div>{activeTab}</div>

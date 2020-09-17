@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #Fireworks {
+      animation: Up_and_down infinite 1s linear;
+      
+    }
+  }
+
+@keyframes Up_and_down {
+    0% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
