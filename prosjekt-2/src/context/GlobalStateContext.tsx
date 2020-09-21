@@ -26,9 +26,9 @@ export const GlobalStateContext = createContext<
 >(undefined);
 
 export const GlobalStateProvider: React.FC = ({ children }) => {
-  const [activeImg, setActiveImg] = useState(0);
-  const [activeSound, setActiveSound] = useState(0);
-  const [activePoem, setActivePoem] = useState(0);
+  const [activeImg, setActiveImg] = useState(1);
+  const [activeSound, setActiveSound] = useState(1);
+  const [activePoem, setActivePoem] = useState(1);
 
   const imgProvider = useMemo(
     () => ({

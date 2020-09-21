@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Main {
+  height: 600px;
+  width: 600px;
+}
