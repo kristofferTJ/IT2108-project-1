@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './App.css';
 import Sidebar from './components/Menu/Menu';
+import Poem from './components/Poems/poem';
 import Header from './components/Header/Header';
 import { GlobalStateContext } from './context/GlobalStateContext';
 import './App.css';
