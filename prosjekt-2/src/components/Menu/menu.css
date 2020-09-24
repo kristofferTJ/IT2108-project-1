@@ -4,31 +4,19 @@
   flex-direction: column;
   float: right;
   width: 150px;
-
+  align-items: flex-start;
   /* background-color: #282c34;  */
 }
 
-
-
 .catagories {
-  /* font-family: sans-serif;
-  color: #f2f2f2;
-  border-radius: 4px;
-  background-color: #282c34;
-  text-align: center;
-  padding: 5px 2px;
-  margin: 5px;
-  text-decoration: none;
-  font-size: 10px; */
-
   background-color: #f4511e; 
-  /* width: 75px; */
+  width: 150px; 
   height: 40px;
   border: none;
   color: black;
   text-align: center;
   font-size: 14px;
-  font-family: Verdana;
+  font-family: sans-serif;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
@@ -44,40 +32,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 10px;
-  width: 200px;  */
 }
 .soundContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 2px 5px;
-  padding: 10px;
-  width: 100px; */
-  /* background-color: #282c34; */
 }
 .poemContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 2px 5px;
-  padding: 10px;
-  width: 100px; */
-  /* background-color: #282c34; */
 }
 
-/* .menu button:hover {
-  background-color: white;
-  color: #555;
-} */
-
 h4 {
-  font-family: Verdana;
+  font-family: sans-serif;
   color: #00B0FF;
 }
 
-/* @media screen and (max-width: 600px) {
-  .menu {
-    width: 150px;
+@media screen and (max-width: 600px) {
+  .catagories {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
   }
-} */
+  h4{
+    font-size: 50%
+  }
+} 

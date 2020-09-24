@@ -27,18 +27,21 @@ function Main() {
 
 
     return (
-        <div className="installations">
+        <div className="installations">  
             <div className="imagediv">
-            <div className="image">{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab - 1]}</div>
+                <div className="image">{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab - 1]}</div>
+            </div>     
+            <div className="PoemAndSound">
+                <div className="poem">
+                    <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
+                </div>
+                <div>Dette er lyd {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab - 1]}
+                <audio controls id="audio">
+                    <source src={getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]} type="audio/wav"/>
+                </audio>
+                </div>
             </div>
-            <div className="poem">
-                <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
-            </div>
-            <div>Dette er lyd {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab - 1]}
-            <audio controls id="audio">
-                <source src={getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]} type="audio/wav"/>
-            </audio>
-            </div>
+            
         </div>
 
     );

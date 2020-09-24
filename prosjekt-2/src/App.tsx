@@ -31,21 +31,20 @@ function App() {
       <div className="Container">
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
           <Tabs></Tabs>
-          <div className="buttons">
-          <button className="button" onClick={favoritt}>Save favorite</button>
-          <button className="button" onClick={getFavoritt}>Get favorite</button>
-          </div>
-          <div className="Main_and_sidebar">
+        <div className="Main_and_sidebar">
+        <div className="space"></div>
           <div className="Main"> 
             <Main></Main>
           </div>
-          <div className="space"></div>
           <div className="Sidebar">
             <Sidebar></Sidebar>
           </div>
           <div className="space"></div>
         </div>
-
+        <div className="buttons">
+          <button className="button" onClick={favoritt}>Save favorite</button>
+          <button className="button" onClick={getFavoritt}>Get favorite</button>
+        </div>
         </tabsContext.Provider>
       </div>
       <p>bilde: {imgProvider.activeImg}</p>
