@@ -1,52 +1,83 @@
 .menu {
+  text-align: center;
   display: flex;
   flex-direction: column;
   float: right;
-  margin: 50px 0px;
-  background-color: black;
+  width: 150px;
+
+  /* background-color: #282c34;  */
 }
 
-.button {
+
+
+.catagories {
+  /* font-family: sans-serif;
   color: #f2f2f2;
+  border-radius: 4px;
+  background-color: #282c34;
   text-align: center;
-  width: 100px;
   padding: 5px 2px;
   margin: 5px;
   text-decoration: none;
-  font-size: 17px;
-  background-color: black;
+  font-size: 10px; */
+
+  background-color: #f4511e; 
+  /* width: 75px; */
+  height: 40px;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  font-family: Verdana;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
 }
+
+.catagories:hover {opacity: 1}
 
 .pictureContainer {
-  justify-content: right;
-  margin: 2px 5px;
-  padding: 10px;
-  width: 100px;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 10px;
+  width: 200px;  */
 }
 .soundContainer {
-  margin: 2px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 2px 5px;
   padding: 10px;
-  width: 100px;
-  background-color: black;
+  width: 100px; */
+  /* background-color: #282c34; */
 }
 .poemContainer {
-  margin: 2px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 2px 5px;
   padding: 10px;
-  width: 100px;
-  background-color: black;
+  width: 100px; */
+  /* background-color: #282c34; */
 }
 
-.menu button:hover {
+/* .menu button:hover {
   background-color: white;
   color: #555;
-}
-
-.menu .active {
-  background-color: #4caf50;
-  color: white;
-}
+} */
 
 h4 {
-  color: Blue;
+  font-family: Verdana;
+  color: #00B0FF;
 }
+
+/* @media screen and (max-width: 600px) {
+  .menu {
+    width: 150px;
+  }
+} */

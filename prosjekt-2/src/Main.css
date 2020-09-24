@@ -1,8 +1,24 @@
 .installations {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.image{
+    border-style: solid;
+    border-color: #00B0FF;
+    border-width: 5px;
+    border-radius: 50px;
+    
+}
+
+.poem{
+    border-style: solid;
+    border-color: #00B0FF;
+    border-width: 10px;
+    border-radius: 50px;
+    /* border-color: #282c34;  */
 }
 
 .flex {

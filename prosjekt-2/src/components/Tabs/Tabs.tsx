@@ -9,9 +9,9 @@ function Tabs() {
 
     return (
         <div className="buttonContainer">
-            <button className="button" onClick={() => tabContext?.setActiveTab(1)}>Bilde 1</button>
-            <button className="button" onClick={() => tabContext?.setActiveTab(2)}>Bilde 2</button>
-            <button className="button" onClick={() => tabContext?.setActiveTab(3)}>Bilde 3</button>
+            <button className="button" onClick={() => tabContext?.setActiveTab(1)}>1</button>
+            <button className="button" onClick={() => tabContext?.setActiveTab(2)}>2</button>
+            <button className="button" onClick={() => tabContext?.setActiveTab(3)}>3</button>
         </div>
     );
  }
