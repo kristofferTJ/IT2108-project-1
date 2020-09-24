@@ -4,6 +4,10 @@
     justify-content: space-evenly;
 }
 
+.imagediv{
+    background-color: white;
+}
+
 .image{
     border-style: solid;
     border-color: #282d33;
@@ -17,6 +21,7 @@
     border-color: #282d33;
     border-width: 5px;
     border-radius: 30px;
+    background-color: white;
     /* border-color: #282c34;  */
 }
 

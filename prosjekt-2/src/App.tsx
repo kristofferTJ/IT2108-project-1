@@ -56,12 +56,17 @@ function App() {
           </div>
           <div className="space"></div>
         </div>
-        <Tabs></Tabs>
         </tabsContext.Provider>
-        <button onClick={favoritt}>Lagre som favorittbilde</button>
-        <button onClick={getFavoritt}>Få favorittbilde</button>
-        <button onClick={favorittCombination}>Lagre som favoritt installasjon</button>
-        <button onClick={getFavorittCombination}>Få favoritt installasjon</button>
+        <div className="buttonContainer2">
+          <div className="fav1">
+            <button className="favorite" onClick={favoritt}>Lagre som favorittbilde</button>
+            <button className="favorite" onClick={getFavoritt}>Få favorittbilde</button>
+          </div>
+          <div className="fav2">
+            <button className="favorite" onClick={favorittCombination}>Lagre som favoritt installasjon</button>
+            <button className="favorite" onClick={getFavorittCombination}>Få favoritt installasjon</button>
+          </div>
+        </div>
       </div>
     </div>
 

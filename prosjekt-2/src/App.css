@@ -26,14 +26,46 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 600px;
-  width: 600px;
+}
+
+.buttonContainer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.favorite{
+  background-color: #00B0FF; 
+  width: 180px;
+  height: 40px;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.favorite:hover {
+  background-color: #059ee6;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {
   .Container{
     flex-direction: column;
   }  
-
-  
+  .favorite{
+    width: 100px;
+    height: 20px; 
+    font-size: 7px;
+  }  
 }
+
+
