@@ -6,17 +6,18 @@ function Sidebar() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
   )!;
+
   return (
     <div className="menu">
       <div className="pictureContainer">
         <h4>Picture</h4>
-        <button className="catagories" onClick={() => imgProvider.setActiveImg(1)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(1)}}>
           Sport
         </button>
-        <button className="catagories" onClick={() => imgProvider.setActiveImg(2)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(2)}}>
           Work
         </button>
-        <button className="catagories" onClick={() => imgProvider.setActiveImg(3)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(3)}}>
           {' '}
           Chill
         </button>
@@ -28,19 +29,19 @@ function Sidebar() {
           className="catagories"
           onClick={() => soundProvider.setActiveSound(1)}
         >
-          Dyr
+          Sport
         </button>
         <button
           className="catagories"
           onClick={() => soundProvider.setActiveSound(2)}
         >
-          Sound 2
+          Work
         </button>
         <button
           className="catagories"
           onClick={() => soundProvider.setActiveSound(3)}
         >
-          Sound 3
+          Chill
         </button>
       </div>
       <div className="poemContainer">
