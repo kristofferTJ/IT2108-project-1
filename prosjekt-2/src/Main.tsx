@@ -31,14 +31,6 @@ function Main() {
 
 
     return (
-<<<<<<< HEAD
-        <div>
-            <div>{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab-1]}</div>
-            <div className="flex">
-            <div>
-                {getSound[menu!.soundProvider.activeSound-1]}
-            </div>
-=======
         <div className="installations">  
             <div className="imagediv">
                 <div className="image">{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab - 1]}</div>
@@ -48,9 +40,8 @@ function Main() {
                     <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
                 </div>
                 <div>
-                {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]}
+                {getSound[menu!.soundProvider.activeSound-1]}
                 </div>
->>>>>>> 5a4b151e6d0d562debc7f3ea1019ceb3096466aa
             </div>
         </div>
     );

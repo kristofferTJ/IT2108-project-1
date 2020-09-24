@@ -9,9 +9,9 @@ function Tabs() {
 
     return (
         <div className="buttonContainer">
-            <button className="button" onClick={() => tabContext?.setActiveTab(1)}>1</button>
-            <button className="button" onClick={() => tabContext?.setActiveTab(2)}>2</button>
-            <button className="button" onClick={() => tabContext?.setActiveTab(3)}>3</button>
+            <button className="button" onClick={() => {sessionStorage.setItem('lastPictureTab', tabContext!.activeTab.toString()); tabContext?.setActiveTab(1)}}>1</button>
+            <button className="button" onClick={() => {sessionStorage.setItem('lastPictureTab', tabContext!.activeTab.toString()); tabContext?.setActiveTab(2)}}>2</button>
+            <button className="button" onClick={() => {sessionStorage.setItem('lastPictureTab', tabContext!.activeTab.toString()); tabContext?.setActiveTab(3)}}>3</button>
         </div>
     );
  }

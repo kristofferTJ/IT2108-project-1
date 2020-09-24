@@ -8,19 +8,19 @@ exports[`renders correctly when there are no items 1`] = `
     className="button"
     onClick={[Function]}
   >
-    Bilde 1
+    1
   </button>
   <button
     className="button"
     onClick={[Function]}
   >
-    Bilde 2
+    2
   </button>
   <button
     className="button"
     onClick={[Function]}
   >
-    Bilde 3
+    3
   </button>
 </div>
 `;
