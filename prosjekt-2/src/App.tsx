@@ -8,11 +8,13 @@ import { tabsContext } from './components/Tabs/TabContext';
 import Header from './components/Header/Header';
 import Main from './Main';
 
+
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
   )!;
   const [activeTab, setActiveTab] = useState(1);
+
 
   const favoritt = () => {
     localStorage.setItem('favorittTab', activeTab.toString());
@@ -24,6 +26,19 @@ function App() {
     imgProvider.setActiveImg(Number(localStorage.getItem('FavorittMenu')));
   };
 
+  const favorittCombination = () => {
+    sessionStorage.setItem("favorittTab", activeTab.toString());
+    sessionStorage.setItem("favorittSound", soundProvider.activeSound.toString());
+    sessionStorage.setItem("favorittImage", imgProvider.activeImg.toString());
+    sessionStorage.setItem("favorittPoem", poemProvider.activePoem.toString());
+  }
+
+  const getFavorittCombination = () => {
+    setActiveTab(Number(sessionStorage.getItem("favorittTab")));
+    soundProvider.setActiveSound(Number(sessionStorage.getItem("favorittSound")));
+    imgProvider.setActiveImg(Number(sessionStorage.getItem("favorittImage")));
+    poemProvider.setActivePoem(Number(sessionStorage.getItem("favorittPoem")));
+  }
 
   return (
     <div className="App">
@@ -41,16 +56,15 @@ function App() {
           </div>
           <div className="space"></div>
         </div>
-        <div className="buttons">
-          <button className="button" onClick={favoritt}>Save favorite</button>
-          <button className="button" onClick={getFavoritt}>Get favorite</button>
-        </div>
+        <Tabs></Tabs>
         </tabsContext.Provider>
+        <button onClick={favoritt}>Lagre som favorittbilde</button>
+        <button onClick={getFavoritt}>Få favorittbilde</button>
+        <button onClick={favorittCombination}>Lagre som favoritt installasjon</button>
+        <button onClick={getFavorittCombination}>Få favoritt installasjon</button>
       </div>
-      <p>bilde: {imgProvider.activeImg}</p>
-      <p>lyd: {soundProvider.activeSound}</p>
-      <p>dikt: {poemProvider.activePoem}</p>
     </div>
+
   );
 }
 

@@ -11,6 +11,10 @@ import OutdoorWork from "./components/Installations/OutdoorWork";
 import Birthday from "./components/Installations/Birthday";
 import Cheers from "./components/Installations/Cheers";
 import Party from "./components/Installations/Party";
+import BirdSongs from "./Media/BirdSongs";
+import Elephant from "./Media/Elephant";
+import HerdSheep from "./Media/HerdSheep";
+
 
 
 function Main() {
@@ -20,9 +24,11 @@ function Main() {
     const getImage = [[<Basket></Basket>,<Football></Football>,<Tennis></Tennis>], 
                     [<Coworking></Coworking>,<Office></Office>,<OutdoorWork></OutdoorWork>], 
                     [<Birthday></Birthday>,<Cheers></Cheers>,<Party></Party>]]
-    const getSound = [[require("./Media/BirdSongs.wav"),require("./Media/Elephant.wav"),require("./Media/HerdSheep.wav")], 
-                    ["2","2-2","2-2-2"], 
-                    ["hei","hei2","hei22"]]
+    const getSound = [[<BirdSongs></BirdSongs>,<Elephant></Elephant>,<HerdSheep></HerdSheep>], 
+                    ["","",""], 
+                    ["","",""]]
+    
+
     const getPoem = [[1,2,3], [1,2,3], [1,2,3]]
 
 
@@ -35,15 +41,11 @@ function Main() {
                 <div className="poem">
                     <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
                 </div>
-                <div>Dette er lyd {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab - 1]}
-                <audio controls id="audio">
-                    <source src={getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]} type="audio/wav"/>
-                </audio>
+                <div>
+                {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]}
                 </div>
             </div>
-            
         </div>
-
     );
 }
 
