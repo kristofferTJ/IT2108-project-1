@@ -10,13 +10,13 @@ function Sidebar() {
     <div className="menu">
       <div className="pictureContainer">
         <h4>Picture</h4>
-        <button className="button" onClick={() => imgProvider.setActiveImg(1)}>
+        <button className="catagories" onClick={() => imgProvider.setActiveImg(1)}>
           Sport
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(2)}>
+        <button className="catagories" onClick={() => imgProvider.setActiveImg(2)}>
           Work
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(3)}>
+        <button className="catagories" onClick={() => imgProvider.setActiveImg(3)}>
           {' '}
           Chill
         </button>
@@ -25,19 +25,19 @@ function Sidebar() {
       <div className="soundContainer">
         <h4>Sound</h4>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(1)}
         >
           Sport
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(2)}
         >
           Work
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(3)}
         >
           Chill
@@ -46,19 +46,19 @@ function Sidebar() {
       <div className="poemContainer">
         <h4>Poem</h4>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(1)}
         >
           Poem 1
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(2)}
         >
           Poem 2
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(3)}
         >
           Poem 3
