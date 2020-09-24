@@ -20,25 +20,20 @@ function App() {
   const favoritt = () => {
     localStorage.setItem('favorittTab', activeTab.toString());
     localStorage.setItem('FavorittMenu', imgProvider.activeImg.toString());
+    localStorage.setItem("favorittSound", soundProvider.activeSound.toString());
+    localStorage.setItem("favorittPoem", poemProvider.activePoem.toString());
   };
 
   const getFavoritt = () => {
     setActiveTab(Number(localStorage.getItem('favorittTab')));
     imgProvider.setActiveImg(Number(localStorage.getItem('FavorittMenu')));
+    soundProvider.setActiveSound(Number(localStorage.getItem("favorittSound")));
+    poemProvider.setActivePoem(Number(localStorage.getItem("favorittPoem")));
   };
 
-  const favorittCombination = () => {
-    sessionStorage.setItem("favorittTab", activeTab.toString());
-    sessionStorage.setItem("favorittSound", soundProvider.activeSound.toString());
-    sessionStorage.setItem("favorittImage", imgProvider.activeImg.toString());
-    sessionStorage.setItem("favorittPoem", poemProvider.activePoem.toString());
-  }
-
-  const getFavorittCombination = () => {
-    setActiveTab(Number(sessionStorage.getItem("favorittTab")));
-    soundProvider.setActiveSound(Number(sessionStorage.getItem("favorittSound")));
-    imgProvider.setActiveImg(Number(sessionStorage.getItem("favorittImage")));
-    poemProvider.setActivePoem(Number(sessionStorage.getItem("favorittPoem")));
+  const getLastPicture = () => {
+    setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
+    imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
   }
 
   return (
@@ -63,8 +58,7 @@ function App() {
             <button className="favorite" onClick={getFavoritt}>Få favorittbilde</button>
           </div>
           <div className="fav2">
-            <button className="favorite" onClick={favorittCombination}>Lagre som favoritt installasjon</button>
-            <button className="favorite" onClick={getFavorittCombination}>Få favoritt installasjon</button>
+            <button className="favorite" onClick={getLastPicture}>Forrige bilde</button>
           </div>
         </div>
       </div>
