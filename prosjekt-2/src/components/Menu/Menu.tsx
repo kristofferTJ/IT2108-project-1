@@ -28,19 +28,19 @@ function Sidebar() {
           className="button"
           onClick={() => soundProvider.setActiveSound(1)}
         >
-          Dyr
+          Sport
         </button>
         <button
           className="button"
           onClick={() => soundProvider.setActiveSound(2)}
         >
-          Sound 2
+          Work
         </button>
         <button
           className="button"
           onClick={() => soundProvider.setActiveSound(3)}
         >
-          Sound 3
+          Chill
         </button>
       </div>
       <div className="poemContainer">

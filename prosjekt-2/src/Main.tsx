@@ -11,9 +11,9 @@ import OutdoorWork from "./components/Installations/OutdoorWork";
 import Birthday from "./components/Installations/Birthday";
 import Cheers from "./components/Installations/Cheers";
 import Party from "./components/Installations/Party";
-import BirdSongs from "./Media/BirdSongs";
-import Elephant from "./Media/Elephant";
-import HerdSheep from "./Media/HerdSheep";
+import SportingEventCrowd from "./Media/SportingEventCrowd";
+import OfficeSounds from "./Media/OfficeSounds";
+import Bongos from "./Media/Bongos";
 
 
 
@@ -24,9 +24,7 @@ function Main() {
     const getImage = [[<Basket></Basket>,<Football></Football>,<Tennis></Tennis>], 
                     [<Coworking></Coworking>,<Office></Office>,<OutdoorWork></OutdoorWork>], 
                     [<Birthday></Birthday>,<Cheers></Cheers>,<Party></Party>]]
-    const getSound = [[<BirdSongs></BirdSongs>,<Elephant></Elephant>,<HerdSheep></HerdSheep>], 
-                    ["","",""], 
-                    ["","",""]]
+    const getSound = [<SportingEventCrowd></SportingEventCrowd>,<OfficeSounds></OfficeSounds>,<Bongos></Bongos>]
     
 
     const getPoem = [[1,2,3], [1,2,3], [1,2,3]]
@@ -37,7 +35,7 @@ function Main() {
             <div>{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab-1]}</div>
             <div className="flex">
             <div>
-                {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]}
+                {getSound[menu!.soundProvider.activeSound-1]}
             </div>
             </div>
         </div>
