@@ -3,7 +3,7 @@ import './OutdoorWork.css';
 
 export default function OutdoorWork() {
   return (
-    <svg width="596" height="561" viewBox="0 0 596 561" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="450" viewBox="0 0 596 561" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Outdoor" clip-path="url(#clip0)">
     <g id="Guy">
     <path id="Vector" d="M47.848 154.994C74.2737 154.994 95.696 131.53 95.696 102.586C95.696 73.6416 74.2737 50.1779 47.848 50.1779C21.4223 50.1779 0 73.6416 0 102.586C0 131.53 21.4223 154.994 47.848 154.994Z" fill="#FF6584"/>

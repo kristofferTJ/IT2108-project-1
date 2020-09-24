@@ -30,16 +30,12 @@ function App() {
       <div className="Header"><Header></Header></div> 
       <div className="Container">
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
-          <div className="Tabs">
           <Tabs></Tabs>
+          <div className="buttons">
           <button className="button" onClick={favoritt}>Save favorite</button>
           <button className="button" onClick={getFavoritt}>Get favorite</button>
           </div>
-          <div>
-            
-          </div>
-       
-        <div className="Main_and_sidebar">
+          <div className="Main_and_sidebar">
           <div className="Main"> 
             <Main></Main>
           </div>
@@ -49,6 +45,7 @@ function App() {
           </div>
           <div className="space"></div>
         </div>
+
         </tabsContext.Provider>
       </div>
       <p>bilde: {imgProvider.activeImg}</p>
