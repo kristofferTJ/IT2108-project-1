@@ -4,19 +4,24 @@
     justify-content: space-evenly;
 }
 
-.image{
+.imagediv{
+    background-color: white;
     border-style: solid;
     border-color: #282d33;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 30px;
+}
+
+.image{ 
     align-self: flex-start
 }
 
 .poem{
     border-style: solid;
     border-color: #282d33;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 30px;
+    background-color: white;
     /* border-color: #282c34;  */
 }
 
@@ -46,10 +51,10 @@
       height: 200px;
     }
 
-    .installations{
+     .installations{
         width: 280px;
         height: 400px;
-    }
+    } 
 
     svg{
         width: 250px;

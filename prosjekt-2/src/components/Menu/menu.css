@@ -5,25 +5,26 @@
   float: right;
   width: 150px;
   align-items: flex-start;
-  /* background-color: #282c34;  */
+  background-color: #282c34;
+  opacity: 0.9;  
 }
 
 .catagories {
-  background-color: #f4511e; 
+  /* background-color: #f4511e;  */
+  background-color: #282c34;
   width: 150px; 
   height: 40px;
   border: none;
-  color: black;
+  color: beige;
   text-align: center;
   font-size: 14px;
   font-family: sans-serif;
   margin: 4px 2px;
-  opacity: 0.6;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
+ 
 }
 
 .catagories:hover {opacity: 1}
@@ -50,6 +51,9 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
+  .menu{
+    width: 100px;
+  }
   .catagories {
     width: 80px;
     height: 20px;

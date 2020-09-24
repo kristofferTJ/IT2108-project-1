@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Main from './Main';
 
 
+
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
@@ -42,20 +43,24 @@ function App() {
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
           <Tabs></Tabs>
         <div className="Main_and_sidebar">
-        <div className="space"></div>
+        {/* <div className="space"></div> */}
           <div className="Main"> 
             <Main></Main>
           </div>
-          <div className="Sidebar">
-            <Sidebar></Sidebar>
+          {/* <div className="Sidebar">
           </div>
-          <div className="space"></div>
+          <div className="space"></div> */}
         </div>
-        <Tabs></Tabs>
         </tabsContext.Provider>
-        <button onClick={favoritt}>Lagre som favorittbilde</button>
-        <button onClick={getFavoritt}>Få favorittbilde</button>
-        <button onClick={getLastPicture}>Forrige bilde</button>
+        <div className="buttonContainer2">
+          <div className="fav1">
+            <button className="favorite" onClick={favoritt}>Lagre som favorittbilde</button>
+            <button className="favorite" onClick={getFavoritt}>Få favorittbilde</button>
+          </div>
+          <div className="fav2">
+            <button className="favorite" onClick={getLastPicture}>Forrige bilde</button>
+          </div>
+        </div>
       </div>
     </div>
 
