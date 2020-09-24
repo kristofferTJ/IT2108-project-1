@@ -33,12 +33,17 @@ function Main() {
 
 
     return (
-        <div>
-            <div>{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab-1]}</div>
-            <div className="flex">
-            <div>
+        <div className="installations">  
+            <div className="imagediv">
+                <div className="image">{getImage[menu!.imgProvider.activeImg-1][tab!.activeTab - 1]}</div>
+            </div>     
+            <div className="PoemAndSound">
+                <div className="poem">
+                    <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
+                </div>
+                <div>
                 {getSound[menu!.soundProvider.activeSound-1][tab!.activeTab-1]}
-            </div>
+                </div>
             </div>
         </div>
     );

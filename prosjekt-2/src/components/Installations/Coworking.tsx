@@ -3,7 +3,7 @@ import './Coworking.css';
 
 export default function Coworking() {
   return (
-    <svg width="603" height="266" viewBox="0 0 603 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="450" viewBox="0 0 603 266" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Coworking" clip-path="url(#clip0)">
     <g id="Plant">
     <path id="Vector" d="M295.149 221.143C304.161 230.537 304.627 244.345 304.627 244.345C304.627 244.345 290.481 242.922 281.468 233.527C272.456 224.133 271.99 210.325 271.99 210.325C271.99 210.325 286.136 211.749 295.149 221.143Z" />

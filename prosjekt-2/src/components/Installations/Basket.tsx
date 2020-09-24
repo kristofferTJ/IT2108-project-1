@@ -3,7 +3,7 @@ import './Basket.css';
 
 export default function Basket() {
   return (
-    <svg width="600" height="473" viewBox="0 0 600 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="450" viewBox="0 0 600 473" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Basket" clip-path="url(#clip0)">
     <g id="Background">
     <path id="Vector" d="M140.229 381.549C140.229 381.549 152.438 393.861 145.547 412.131C138.655 430.401 157.363 460.79 157.363 460.79L156.766 460.694C131.686 456.233 119.208 427.305 133.17 405.818C138.405 397.835 142.655 388.463 140.229 381.549Z" fill="#00B0FF"/>

@@ -42,19 +42,29 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      <tabsContext.Provider value={{ activeTab, setActiveTab }}>
-        <div className="Sidebar">
-        <div className="Main"><Main></Main></div>
-        <Sidebar></Sidebar>
+      <div className="Header"><Header></Header></div> 
+      <div className="Container">
+        <tabsContext.Provider value={{ activeTab, setActiveTab }}>
+          <Tabs></Tabs>
+        <div className="Main_and_sidebar">
+        <div className="space"></div>
+          <div className="Main"> 
+            <Main></Main>
+          </div>
+          <div className="Sidebar">
+            <Sidebar></Sidebar>
+          </div>
+          <div className="space"></div>
         </div>
         <Tabs></Tabs>
-      </tabsContext.Provider>
-      <button onClick={favoritt}>Lagre som favorittbilde</button>
-      <button onClick={getFavoritt}>Få favorittbilde</button>
-      <button onClick={favorittCombination}>Lagre som favoritt installasjon</button>
-      <button onClick={getFavorittCombination}>Få favoritt installasjon</button>
+        </tabsContext.Provider>
+        <button onClick={favoritt}>Lagre som favorittbilde</button>
+        <button onClick={getFavoritt}>Få favorittbilde</button>
+        <button onClick={favorittCombination}>Lagre som favoritt installasjon</button>
+        <button onClick={getFavorittCombination}>Få favoritt installasjon</button>
+      </div>
     </div>
+
   );
 }
 

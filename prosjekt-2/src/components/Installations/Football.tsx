@@ -3,7 +3,7 @@ import './Football.css';
 
 export default function Football() {
   return (
-    <svg width="857" height="511" viewBox="0 0 857 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="450" viewBox="0 0 857 511" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Footballplayer">
     <g id="Boy">
     <path id="Vector" d="M404.044 475.546C399.513 475.542 395.056 476.773 391.094 479.125H416.96C413.01 476.774 408.564 475.542 404.044 475.546V475.546Z" fill="#E6E6E6"/>

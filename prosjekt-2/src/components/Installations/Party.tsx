@@ -3,7 +3,7 @@ import './Party.css';
 
 export default function Party() {
   return (
-    <svg width="600" height="446" viewBox="0 0 600 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500" height="450" viewBox="0 0 600 446" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Party" clip-path="url(#clip0)">
     <g id="Group" opacity="0.1">
     <path id="Vector" opacity="0.1" d="M431.376 429.317C436.865 429.317 441.315 423.521 441.315 416.372C441.315 409.222 436.865 403.427 431.376 403.427C425.886 403.427 421.436 409.222 421.436 416.372C421.436 423.521 425.886 429.317 431.376 429.317Z" fill="#3F3D56"/>
