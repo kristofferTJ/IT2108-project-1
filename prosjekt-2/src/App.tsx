@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Main from './Main';
 
 
+
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
@@ -47,14 +48,13 @@ function App() {
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
           <Tabs></Tabs>
         <div className="Main_and_sidebar">
-        <div className="space"></div>
+        {/* <div className="space"></div> */}
           <div className="Main"> 
             <Main></Main>
           </div>
-          <div className="Sidebar">
-            <Sidebar></Sidebar>
+          {/* <div className="Sidebar">
           </div>
-          <div className="space"></div>
+          <div className="space"></div> */}
         </div>
         </tabsContext.Provider>
         <div className="buttonContainer2">

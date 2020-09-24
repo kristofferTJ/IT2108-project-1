@@ -3,9 +3,13 @@
     height: 55px;
     background-color: #282c34;;
     opacity: 0.9;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
+}
+
+.spaceBetween{
+    width: 15px;
 }
 
 .title{

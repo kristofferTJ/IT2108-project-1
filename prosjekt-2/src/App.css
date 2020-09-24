@@ -14,7 +14,7 @@
 .Main_and_sidebar{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .space{

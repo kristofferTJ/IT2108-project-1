@@ -1,12 +1,12 @@
 .buttonContainer{
-    display: felx;
+    display: flex;
     justify-content: space-evenly;
 }
 
 
 .button {
     background-color: #00B0FF;
-    width: 150px;
+    width: 30%;
     height: 40px; 
     border: none;
     color: white;
@@ -31,7 +31,6 @@
       flex-direction: row;
     }
     .button{
-        width: 50px;
         height: 20px; 
         font-size: 10px;
     } 
