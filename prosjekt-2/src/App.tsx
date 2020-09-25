@@ -8,9 +8,13 @@ import { tabsContext } from './components/Tabs/TabContext';
 import Header from './components/Header/Header';
 import Main from './Main';
 
+interface Props{
+  isOpen: boolean;
+  setOpen: (val: boolean) => void;
 
+}
 
-function App() {
+function App(props:Props) {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
   )!;
@@ -38,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Header"><Header></Header></div> 
+      <div className="Header"><Header isOpen={props.isOpen} setOpen={props.setOpen}></Header></div> 
       <div className="Container">
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
           <Tabs></Tabs>

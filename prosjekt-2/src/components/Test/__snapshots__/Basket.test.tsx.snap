@@ -3,9 +3,9 @@
 exports[`renders correctly when there are no items 1`] = `
 <svg
   fill="none"
-  height="473"
+  height="450"
   viewBox="0 0 600 473"
-  width="600"
+  width="500"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
