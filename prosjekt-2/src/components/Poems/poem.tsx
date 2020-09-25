@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
-export default class Poem extends Component {
-  state = {
-    poems: [],
-  };
-  getpoem() {
-    try {
-      axios
-        .get('https://poetrydb.org/author,title/Shakespeare;Sonnet')
-        .then((res) => {
-          let poems = res.data;
-          this.setState({ poems });
-        });
-    } catch (err) {
-      console.error(err.message);
-    }
+interface Props {
+  tabNumb: number;
+  menuNumb: number;
+}
+
+export default class Poem extends Component<Props> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      poems: null,
+      tab: props.tabNumb,
+      menu: props.menuNumb,
+    };
   }
+
+  ccomponentDidMount() {
+    fetch('https://poetrydb.org/author,poemcount/Dickinson;9')
+      .then((res) => res.json())
+      .then((result) => {
+        this.setState({
+          poems: result.lines,
+        });
+      });
+  }
+
   render() {
-    return (
-      <ul>
-        {this.state.poems.map((poems) => (
-          <li>{poems}</li>
-        ))}
-      </ul>
-    );
+    //const { state.poems, tabNumb, menuNumb } = this.props;
+    return <div>{}</div>;
   }
 }
