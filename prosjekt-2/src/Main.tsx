@@ -11,10 +11,10 @@ import OutdoorWork from "./components/Installations/OutdoorWork";
 import Birthday from "./components/Installations/Birthday";
 import Cheers from "./components/Installations/Cheers";
 import Party from "./components/Installations/Party";
-import SportingEventCrowd from "./Media/SportingEventCrowd";
-import OfficeSounds from "./Media/OfficeSounds";
-import Bongos from "./Media/Bongos";
 
+const Bongos = require("./Media/Bongos.wav");
+const OfficeSounds = require("./Media/OfficeSounds.wav");
+const SportingEventCrowd = require("./Media/SportingEventCrowd.wav");
 
 
 function Main() {
@@ -24,8 +24,10 @@ function Main() {
     const getImage = [[<Basket></Basket>,<Football></Football>,<Tennis></Tennis>], 
                     [<Coworking></Coworking>,<Office></Office>,<OutdoorWork></OutdoorWork>], 
                     [<Birthday></Birthday>,<Cheers></Cheers>,<Party></Party>]]
-    const getSound = [<SportingEventCrowd></SportingEventCrowd>,<OfficeSounds></OfficeSounds>,<Bongos></Bongos>]
-    
+
+
+    const audios = [SportingEventCrowd, OfficeSounds,Bongos];
+    let audio = audios[menu!.soundProvider.activeSound-1];
 
     const getPoem = [[1,2,3], [1,2,3], [1,2,3]]
 
@@ -40,7 +42,7 @@ function Main() {
                     <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
                 </div>
                 <div>
-                {getSound[menu!.soundProvider.activeSound-1]}
+                    <audio src={(audio!)} controls></audio>
                 </div>
             </div>
         </div>
