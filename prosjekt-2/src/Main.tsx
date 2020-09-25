@@ -42,7 +42,7 @@ function Main() {
                     <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
                 </div>
                 <div>
-                    <audio src={(audio!)} controls></audio>
+                    <audio src={(audio!)} controls id="audiobar"></audio>
                 </div>
             </div>
         </div>

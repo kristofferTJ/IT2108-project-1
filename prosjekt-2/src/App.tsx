@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import './App.css';
-import Sidebar from './components/Menu/Menu';
 import { GlobalStateContext } from './context/GlobalStateContext';
 import './App.css';
 import Tabs from './components/Tabs/Tabs';
@@ -41,17 +40,15 @@ function App() {
       <div className="Header"><Header></Header></div> 
       <div className="Container">
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
-          <Tabs></Tabs>
+        <Tabs></Tabs>
+        <div className="space"></div>
         <div className="Main_and_sidebar">
-        {/* <div className="space"></div> */}
           <div className="Main"> 
             <Main></Main>
           </div>
-          {/* <div className="Sidebar">
-          </div>
-          <div className="space"></div> */}
         </div>
         </tabsContext.Provider>
+        <div className="space"></div>
         <div className="buttonContainer2">
           <div className="fav1">
             <button className="favorite" onClick={favoritt}>Lagre som favorittbilde</button>

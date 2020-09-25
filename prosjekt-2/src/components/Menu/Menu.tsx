@@ -19,7 +19,7 @@ function Sidebar() {
         </button>
         <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(3)}}>
           {' '}
-          Chill
+          Social
         </button>
       </div>
 
@@ -29,19 +29,19 @@ function Sidebar() {
           className="catagories"
           onClick={() => soundProvider.setActiveSound(1)}
         >
-          Sport
+          Stadium
         </button>
         <button
           className="catagories"
           onClick={() => soundProvider.setActiveSound(2)}
         >
-          Work
+          Office
         </button>
         <button
           className="catagories"
           onClick={() => soundProvider.setActiveSound(3)}
         >
-          Chill
+          Bongo
         </button>
       </div>
       <div className="poemContainer">

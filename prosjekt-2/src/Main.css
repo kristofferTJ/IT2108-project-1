@@ -6,6 +6,7 @@
 
 .imagediv{
     background-color: white;
+    width: 550px;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
@@ -32,7 +33,11 @@
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 1070px) {
+#audiobar{
+    height: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
     .installations{
       flex-direction: column;
     }
@@ -52,8 +57,7 @@
     }
 
      .installations{
-        width: 280px;
-        height: 400px;
+        height: 300px; 
     } 
 
     svg{
@@ -63,6 +67,11 @@
 
     .PoemAndSound{
         width: 280px;
+    }
+
+    #audiobar{
+        width: 200px; 
+        height: 20px;
     }
      
   }
