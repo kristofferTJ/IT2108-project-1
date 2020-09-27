@@ -61,11 +61,6 @@
   .Container{
     flex-direction: column;
   }  
-  .favorite{
-    width: 100px;
-    height: 20px; 
-    font-size: 7px;
-  }  
 }
 
 

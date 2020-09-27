@@ -53,7 +53,7 @@
 @media only screen and (max-width: 600px) {
     .imagediv{
       width: 280px;
-      height: 200px;
+      height: 220px;
     }
 
      .installations{
@@ -62,7 +62,7 @@
 
     svg{
         width: 250px;
-        height: 200px;
+        height: 220px;
     }
 
     .PoemAndSound{
