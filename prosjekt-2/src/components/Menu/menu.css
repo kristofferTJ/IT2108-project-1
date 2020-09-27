@@ -1,52 +1,65 @@
 .menu {
+  text-align: center;
   display: flex;
   flex-direction: column;
   float: right;
-  margin: 50px 0px;
-  background-color: black;
+  width: 150px;
+  align-items: flex-start;
+  background-color: #282c34;
+  opacity: 0.9;  
 }
 
-.button {
-  color: #f2f2f2;
+.catagories {
+  /* background-color: #f4511e;  */
+  background-color: #282c34;
+  width: 130px; 
+  height: 40px;
+  border: none;
+  color: beige;
   text-align: center;
-  width: 100px;
-  padding: 5px 2px;
-  margin: 5px;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
   text-decoration: none;
-  font-size: 17px;
-  background-color: black;
+  cursor: pointer;
+ 
 }
+
+.catagories:hover {opacity: 1}
 
 .pictureContainer {
-  justify-content: right;
-  margin: 2px 5px;
-  padding: 10px;
-  width: 100px;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .soundContainer {
-  margin: 2px 5px;
-  padding: 10px;
-  width: 100px;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .poemContainer {
-  margin: 2px 5px;
-  padding: 10px;
-  width: 100px;
-  background-color: black;
-}
-
-.menu button:hover {
-  background-color: white;
-  color: #555;
-}
-
-.menu .active {
-  background-color: #4caf50;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h4 {
-  color: Blue;
+  font-family: sans-serif;
+  color: #00B0FF;
 }
+
+@media screen and (max-width: 600px) {
+  .menu{
+    width: 100px;
+  }
+  .catagories {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+  h4{
+    font-size: 50%
+  }
+} 

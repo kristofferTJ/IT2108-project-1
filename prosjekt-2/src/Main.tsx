@@ -10,54 +10,43 @@ import OutdoorWork from './components/Installations/OutdoorWork';
 import Birthday from './components/Installations/Birthday';
 import Cheers from './components/Installations/Cheers';
 import Party from './components/Installations/Party';
+import Poem from './components/Poems/poem';
+
+const Bongos = require('./Media/Bongos.wav');
+const OfficeSounds = require('./Media/OfficeSounds.wav');
+const SportingEventCrowd = require('./Media/SportingEventCrowd.wav');
 
 function Main() {
-  // const tab = useContext(tabsContext);
-  // const menu = useContext(GlobalStateContext);
-
-  const { imgProvider, soundProvider, tabProvider } = useContext(
+  const { imgProvider, soundProvider, tabProvider, poemProvider } = useContext(
     GlobalStateContext
   )!;
+
+  const audios = [SportingEventCrowd, OfficeSounds, Bongos];
+  let audio = audios[soundProvider.activeSound - 1];
 
   const getImage = [
     [<Basket></Basket>, <Football></Football>, <Tennis></Tennis>],
     [<Coworking></Coworking>, <Office></Office>, <OutdoorWork></OutdoorWork>],
     [<Birthday></Birthday>, <Cheers></Cheers>, <Party></Party>],
   ];
-  const getSound = [
-    [
-      require('./Media/BirdSongs.wav'),
-      require('./Media/Elephant.wav'),
-      require('./Media/HerdSheep.wav'),
-    ],
-    ['2', '2-2', '2-2-2'],
-    ['hei', 'hei2', 'hei22'],
-  ];
-  const getPoem = [
-    [1, 2, 3],
-    [1, 2, 3],
-    [1, 2, 3],
-  ];
 
   return (
-    <div>
-      <div>
-        {getImage[imgProvider.activeImg - 1][tabProvider.activeTab - 1]}
-      </div>
-      <div className="flex">
-        <div>Dette er dikt {getPoem[0][tabProvider.activeTab - 1]}</div>
-        <div>
-          Dette er lyd{' '}
-          {getSound[soundProvider.activeSound - 1][tabProvider.activeTab - 1]}
+    <div className="installations">
+      <div className="imagediv">
+        <div className="image">
+          {getImage[imgProvider.activeImg - 1][tabProvider.activeTab - 1]}
         </div>
-        <audio controls id="audio">
-          <source
-            src={
-              getSound[soundProvider.activeSound - 1][tabProvider.activeTab - 1]
-            }
-            type="audio/wav"
-          />
-        </audio>
+      </div>
+      <div className="PoemAndSound">
+        <div className="poem">
+          <Poem
+            tabNumb={tabProvider.activeTab}
+            menuNumb={poemProvider.activePoem}
+          ></Poem>
+        </div>
+        <div>
+          <audio src={audio!} controls id="audiobar"></audio>
+        </div>
       </div>
     </div>
   );

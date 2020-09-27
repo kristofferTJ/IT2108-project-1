@@ -6,59 +6,59 @@ function Sidebar() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
   )!;
+
   return (
     <div className="menu">
       <div className="pictureContainer">
         <h4>Picture</h4>
-        <button className="button" onClick={() => imgProvider.setActiveImg(1)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(1)}}>
           Sport
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(2)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(2)}}>
           Work
         </button>
-        <button className="button" onClick={() => imgProvider.setActiveImg(3)}>
+        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(3)}}>
           {' '}
-          Chill
+          Social
         </button>
       </div>
-
       <div className="soundContainer">
         <h4>Sound</h4>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(1)}
         >
-          Dyr
+          Stadium
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(2)}
         >
-          Sound 2
+          Office
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => soundProvider.setActiveSound(3)}
         >
-          Sound 3
+          Bongo
         </button>
       </div>
       <div className="poemContainer">
         <h4>Poem</h4>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(1)}
         >
           Poem 1
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(2)}
         >
           Poem 2
         </button>
         <button
-          className="button"
+          className="catagories"
           onClick={() => poemProvider.setActivePoem(3)}
         >
           Poem 3

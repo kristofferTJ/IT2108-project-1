@@ -1,10 +1,15 @@
 .header{
-    display: felx;
+    display: flex;
     height: 55px;
-    background-color: #282c34;
-    flex-direction: column;
+    background-color: #282c34;;
+    opacity: 0.9;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
+}
+
+.spaceBetween{
+    width: 15px;
 }
 
 .title{
@@ -14,3 +19,14 @@
     font-size: 24px;
     color: beige;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .header{
+      height: 30px;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+  }

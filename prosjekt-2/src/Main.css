@@ -1,8 +1,29 @@
 .installations {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.imagediv{
+    background-color: white;
+    width: 550px;
+    border-style: solid;
+    border-color: #282d33;
+    border-width: 3px;
+    border-radius: 30px;
+}
+
+.image{ 
+    align-self: flex-start
+}
+
+.poem{
+    border-style: solid;
+    border-color: #282d33;
+    border-width: 3px;
+    border-radius: 30px;
+    background-color: white;
+    /* border-color: #282c34;  */
 }
 
 .flex {
@@ -11,3 +32,46 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+#audiobar{
+    height: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .installations{
+      flex-direction: column;
+    }
+    .image{
+        order: 1
+    }
+    .poem{
+        order: 2
+    }
+  }
+
+  /* for iphone */
+@media only screen and (max-width: 600px) {
+    .imagediv{
+      width: 280px;
+      height: 200px;
+    }
+
+     .installations{
+        height: 300px; 
+    } 
+
+    svg{
+        width: 250px;
+        height: 200px;
+    }
+
+    .PoemAndSound{
+        width: 280px;
+    }
+
+    #audiobar{
+        width: 200px; 
+        height: 20px;
+    }
+     
+  }

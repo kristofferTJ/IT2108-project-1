@@ -1,0 +1,21 @@
+.burgerBar {
+    transition: 0.3s; 
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    background-color: beige;
+    margin: 5px;
+    width: 40px;
+    height: 5px;
+  }
+
+  .burgermenuContainer:hover {
+    cursor: pointer;
+}
+
+  @media only screen and (max-width: 600px) {
+    .burgerBar{
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+    }
+  }
