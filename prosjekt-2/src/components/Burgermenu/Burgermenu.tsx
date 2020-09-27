@@ -1,7 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import Sidebar from "../Menu/Menu";
-import Burger from '../Burgermenu/Burger';
-import { booleanLiteral } from "@babel/types";
 
 interface Props{
     isOpen: boolean;

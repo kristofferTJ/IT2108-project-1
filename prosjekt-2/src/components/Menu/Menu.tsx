@@ -22,7 +22,6 @@ function Sidebar() {
           Chill
         </button>
       </div>
-
       <div className="soundContainer">
         <h4>Sound</h4>
         <button

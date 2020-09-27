@@ -29,8 +29,6 @@ function Main() {
     const audios = [SportingEventCrowd, OfficeSounds,Bongos];
     let audio = audios[menu!.soundProvider.activeSound-1];
 
-    const getPoem = [[1,2,3], [1,2,3], [1,2,3]]
-
 
     return (
         <div className="installations">  
@@ -39,7 +37,6 @@ function Main() {
             </div>     
             <div className="PoemAndSound">
                 <div className="poem">
-                    <div>Dette er dikt {getPoem[0][tab!.activeTab - 1]}</div>
                 </div>
                 <div>
                     <audio src={(audio!)} controls></audio>
