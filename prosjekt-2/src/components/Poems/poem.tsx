@@ -5,28 +5,72 @@ interface Props {
   menuNumb: number;
 }
 
-export default class Poem extends Component<Props> {
-  constructor(props: Props) {
+interface State {
+  poems: any;
+  isLoaded: boolean;
+  error: any;
+}
+
+export default class Poem extends Component<Props, State, any> {
+  constructor(props: Props, state: State) {
     super(props);
     this.state = {
-      poems: null,
-      tab: props.tabNumb,
-      menu: props.menuNumb,
+      error: null,
+      poems: state.poems,
+      isLoaded: false,
     };
   }
 
-  ccomponentDidMount() {
-    fetch('https://poetrydb.org/author,poemcount/Dickinson;9')
+  async componentDidMount() {
+    await fetch('https://poetrydb.org/author,poemcount/Dickinson;9')
       .then((res) => res.json())
-      .then((result) => {
-        this.setState({
-          poems: result.lines,
-        });
-      });
+      .then(
+        (res) => {
+          this.setState({
+            isLoaded: true,
+            poems: res,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
   }
 
   render() {
-    //const { state.poems, tabNumb, menuNumb } = this.props;
-    return <div>{}</div>;
+    const { error, isLoaded, poems } = this.state;
+    if (error) {
+      return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      let t;
+      var p = poems[this.props.tabNumb * 3 + this.props.menuNumb - 1].lines;
+      var str: string = '';
+      for (let line of p) {
+        str += line + '\n';
+      }
+      t = str.trim();
+
+      console.log(t);
+
+      return (
+        <div
+          className="poem"
+          key={this.props.tabNumb * 3 + this.props.menuNumb - 1}
+        >
+          {t}
+        </div>
+      );
+
+      // return (
+      //   <div key={this.props.tabNumb * 3 + this.props.menuNumb - 1}>
+      //     {poems[this.props.tabNumb * 3 + this.props.menuNumb - 1].lines}
+      //   </div>
+      // );
+    }
   }
 }
