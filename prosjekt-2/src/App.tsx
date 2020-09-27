@@ -49,15 +49,13 @@ function App(props: Props) {
           <Main></Main>
         </div>
       </div>
-      /*{' '}
-      <div>
-        /*{' '}
+      {/* <div>
         <Poem
           tabNumb={tabProvider.activeTab}
           menuNumb={poemProvider.activePoem}
         />
-      </div>{' '}
-      */
+      </div> */}
+
       <div className="space"></div>
       <div className="buttonContainer2">
         <div className="fav1">

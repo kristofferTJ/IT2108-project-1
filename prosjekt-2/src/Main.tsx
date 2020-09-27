@@ -38,12 +38,11 @@ function Main() {
         </div>
       </div>
       <div className="PoemAndSound">
-        <div className="poem">
-          <Poem
-            tabNumb={tabProvider.activeTab}
-            menuNumb={poemProvider.activePoem}
-          ></Poem>
-        </div>
+        <Poem
+          tabNumb={tabProvider.activeTab}
+          menuNumb={poemProvider.activePoem}
+        ></Poem>
+
         <div>
           <audio src={audio!} controls id="audiobar"></audio>
         </div>
