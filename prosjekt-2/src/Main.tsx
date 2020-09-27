@@ -39,7 +39,7 @@ function Main() {
                 <div className="poem">
                 </div>
                 <div>
-                    <audio src={(audio!)} controls></audio>
+                    <audio src={(audio!)} controls id="audiobar"></audio>
                 </div>
             </div>
         </div>

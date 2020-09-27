@@ -8,6 +8,10 @@
     height: 5px;
   }
 
+  .burgermenuContainer:hover {
+    cursor: pointer;
+}
+
   @media only screen and (max-width: 600px) {
     .burgerBar{
         width: 25px;
