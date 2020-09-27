@@ -31,7 +31,6 @@ function Main() {
 
     const getPoem = [[1,2,3], [1,2,3], [1,2,3]]
 
-
     return (
         <div className="installations">  
             <div className="imagediv">

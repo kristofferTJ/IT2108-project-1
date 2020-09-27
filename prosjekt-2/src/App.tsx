@@ -6,6 +6,7 @@ import Tabs from './components/Tabs/Tabs';
 import { tabsContext } from './components/Tabs/TabContext';
 import Header from './components/Header/Header';
 import Main from './Main';
+import ThemeProvider, {themes, useTheme} from './theme';
 
 
 
@@ -30,12 +31,38 @@ function App() {
     poemProvider.setActivePoem(Number(localStorage.getItem("favorittPoem")));
   };
 
-  const getLastPicture = () => {
-    setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
-    imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
+  // const getLastPicture = () => {
+  //   setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
+  //   imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
+  // }
+
+  const {theme, setTheme} = useTheme()!;
+
+  const toggleTheme = () => {
+    switch(theme) {
+      case themes.blue:
+        setTheme(themes.pink);
+        sessionStorage.setItem("themes", "pink");
+        console.log(sessionStorage.getItem("themes"))
+        console.log("pink")
+        break;
+      case themes.pink:
+        setTheme(themes.green);
+        sessionStorage.setItem("themes", "green");
+        console.log(sessionStorage.getItem("themes"))
+        console.log("green")
+        break;
+      case themes.green:
+        setTheme(themes.blue);
+        sessionStorage.setItem("themes", "blue");
+        console.log(sessionStorage.getItem("themes"))
+        console.log("blue")
+        break;
+    }
   }
 
   return (
+    <ThemeProvider>
     <div className="App">
       <div className="Header"><Header></Header></div> 
       <div className="Container">
@@ -51,15 +78,16 @@ function App() {
         <div className="space"></div>
         <div className="buttonContainer2">
           <div className="fav1">
-            <button className="favorite" onClick={favoritt}>Lagre som favorittbilde</button>
-            <button className="favorite" onClick={getFavoritt}>Få favorittbilde</button>
+            <button className="favorite" onClick={favoritt}>Save favorite</button>
+            <button className="favorite" onClick={getFavoritt}>Get favorite</button>
           </div>
           <div className="fav2">
-            <button className="favorite" onClick={getLastPicture}>Forrige bilde</button>
+            <button className="favorite" onClick={toggleTheme}>Change theme</button>
           </div>
         </div>
       </div>
     </div>
+    </ThemeProvider>
 
   );
 }
