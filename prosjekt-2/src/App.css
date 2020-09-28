@@ -55,6 +55,11 @@
   .Container{
     flex-direction: column;
   }  
+
+  .button2{
+    width: 100px;
+    height: 40px; 
+  }
 }
 
 
