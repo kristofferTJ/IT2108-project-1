@@ -11,13 +11,40 @@ function Sidebar() {
     <div className="menu">
       <div className="pictureContainer">
         <h4>Picture</h4>
-        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(1)}}>
+        <button
+          className="catagories"
+          onClick={() => {
+            sessionStorage.setItem(
+              'lastPictureMenu',
+              imgProvider.activeImg.toString()
+            );
+            imgProvider.setActiveImg(1);
+          }}
+        >
           Sport
         </button>
-        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(2)}}>
+        <button
+          className="catagories"
+          onClick={() => {
+            sessionStorage.setItem(
+              'lastPictureMenu',
+              imgProvider.activeImg.toString()
+            );
+            imgProvider.setActiveImg(2);
+          }}
+        >
           Work
         </button>
-        <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(3)}}>
+        <button
+          className="catagories"
+          onClick={() => {
+            sessionStorage.setItem(
+              'lastPictureMenu',
+              imgProvider.activeImg.toString()
+            );
+            imgProvider.setActiveImg(3);
+          }}
+        >
           Social
         </button>
       </div>
@@ -48,7 +75,7 @@ function Sidebar() {
           className="catagories"
           onClick={() => poemProvider.setActivePoem(1)}
         >
-          Autum 
+          Autum
         </button>
         <button
           className="catagories"
