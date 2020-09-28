@@ -56,7 +56,8 @@ Session Storage har vi brukt til å la brukeren kunne lagre sin favoritt lyd og 
 Vi har brukt snapshot testing på komponentene Basket, Tabs og Burger. Disse ligger i en egen test mappe, og er kjørt lokalt på pc-en ved å skrive npm test i terminalen. De fungerer som de skal alle sammen, og har ingen feil når de kjøres. Siden det ikke skulle legges vekt på omfanget av testingen, men at man har forstått prinsippet, mente vi at det ikke var nødvendig å lage sammen test for flere av filene. Men hvis det skulle vært gjort kunne resten av komponentene vært testet på akkurat samme måte.
 
 **Testing av responsiv design på ulike enheter**
-Da vi jobbet med designet for å gjøre nettsiden mer responsiv testet vi den jevnlig i “inspiser”-vinduet. Vi tok hovedsakelig utgangspunkt i IPhone X og IPad siden dette er to ganske standard skjermstørrelser, og sjekket på andre mobiltyper etterpå. Vi testet også å få nettsiden opp på en fysisk mobil, og så da at noen av knappene kunne være vanskelige å trykke på, og tilpasset etter dette.
+
+Da vi jobbet med designet for å gjøre nettsiden mer responsiv testet vi den jevnlig i “inspiser”-vinduet. Vi tok hovedsakelig utgangspunkt i IPhone X og IPad siden dette er to ganske standard skjermstørrelser, og sjekket på andre mobiltyper etterpå. Vi testet også nettsiden på en fysisk mobil og oppdaget da at noen av knappene kunne være vanskelige å trykke på. Vi tilpasset knappe-størrelsen på mobil etter dette.
 
 **Enheter som har blitt testet på**
 
@@ -67,13 +68,13 @@ Da vi jobbet med designet for å gjøre nettsiden mer responsiv testet vi den je
 
 ## Responsiv web design
 
-Layouten på nettsiden tilpasses etter skjermstørrelsen og designet fungerer dermed fint på både desktop, Ipad og mobil. Dette gjøres ved hjelp av Flexbox og media queries, som blant annet får teksten til å legge seg under diktene når skjermen blir smalere enn 1050px, slik at innholdet til enhver tid utnytter skjermen på en god måte. Vi har satt standard mobilskjerm-bredde til skjermstørrelse under 600px, og det meste på skjermen vil da forminskes blant annet bildene, knappene og headeren. 
+Layouten på nettsiden tilpasses etter skjermstørrelsen og designet fungerer dermed fint på både desktop, Ipad og mobil. Dette gjøres ved hjelp av Flexbox og media queries, som blant annet får teksten til å legge seg under diktene når skjermen blir smalere enn 1125px, slik at innholdet til enhver tid utnytter skjermen på en god måte. Vi har satt standard mobilskjerm-bredde til skjermstørrelse under 600px, og bildene, knappene og headeren vil da forminskes. 
 
-Vi startet først med å designe for desktop og måtte derfor etter hvert gjøre noen endringer for å enklere kunne tilpasse siden til mobilversjon. Blant annet byttet vi menyen ut med en burgermeny for at den ikke skulle ta opp for mye plass, og lot de øverste knappene bre seg utover hele skjermen og tilpasse seg til den. Neste gang ville vi startet med å designe for mobil først, for å unngå disse ekstra endringene
+Vi startet først med å designe for desktop og måtte derfor etter hvert gjøre noen endringer for å enklere kunne tilpasse siden til mobilversjon. Blant annet byttet vi menyen ut med en burgermeny for at den ikke skulle ta opp for mye plass, og lot de øverste knappene bre seg utover hele skjermen og tilpasse seg til størrelsen på den. Neste gang ville vi startet med å designe for mobil først for å unngå disse ekstra endringene mot slutten.
 
-Vi valgte å kun bruke CSS Flexbox fremfor grid, etter å ha testet begge deler og kommet  frem til at Flexbox var enklest å jobbe med. Flexbox fungerte bra for å tilpasse hvordan elementene skulle legge seg rundt hverandre når vi endret skjermstørrelsen.
+Vi valgte å kun bruke CSS Flexbox fremfor grid etter å ha testet begge deler og kommet  frem til at vi syntes Flexbox var enklest å jobbe med. Flexbox fungerte bra for å tilpasse hvordan elementene skulle legge seg rundt hverandre når vi endret skjermstørrelsen.
 
-Viewport kommer integrert i React i index.html filen i public-mappen. Dette er brukerens synlige del av skjermen og bredden er her satt til bredden på skjermen.
+Viewport kommer integrert i React i index.html filen i public-mappen. Dette er brukerens synlige del av skjermen, og bredden er satt til bredden på skjermen.
 
 
 ## Git
