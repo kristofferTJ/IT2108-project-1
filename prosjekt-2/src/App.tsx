@@ -16,7 +16,7 @@ function App(props: Props) {
     GlobalStateContext
   )!;
  
-  const [darkMode, setDarkmode] = useState(false);
+  const [changeTheme, setchangeTheme] = useState(false);
 
 
   const favoritt = () => {
@@ -52,12 +52,12 @@ function App(props: Props) {
   }
 
   return (
-    <div className={`App ${darkMode ? 'darkBody' : ''}`}>
-      <div className={`Header ${darkMode ? 'darkBody' : ''}`}>
+    <div className={`App ${changeTheme ? 'darkBody' : ''}`}>
+      <div className={`Header ${changeTheme ? 'pinkHeader' : ''}`}>
         <Header isOpen={props.isOpen} setOpen={props.setOpen}>
         </Header></div> 
       <div className="Container">
-        <Tabs></Tabs>
+        <Tabs></Tabs> 
         <div className="space"></div>
         <div className="Main">
           <Main></Main>
@@ -74,7 +74,7 @@ function App(props: Props) {
           </button>
         </div>
         <div className="fav2">
-          <button className="button2" onClick={() => setDarkmode(!darkMode)}> 
+          <button className="button2" onClick={() => setchangeTheme(!changeTheme)}> 
           Change theme
           </button>
         </div>

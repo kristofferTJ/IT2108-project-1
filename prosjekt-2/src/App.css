@@ -11,11 +11,6 @@
   justify-content: space-evenly;
 }
 
-/* .Main{
-  display: flex;
-  justify-content: center;
-} */
-
 .space{
   height: 25px;
   width: 100%
@@ -43,7 +38,7 @@
   font-size: 13px;
   font-family: sans-serif;
   margin: 4px 2px;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
@@ -51,7 +46,7 @@
   border-radius: 20px;
 }
 
-.favorite:hover {
+.button2:hover {
   background-color: #059ee6;
   opacity: 1;
 }
