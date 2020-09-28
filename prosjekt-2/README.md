@@ -112,3 +112,5 @@ Festivities
 Lydfilene er hentet herfra:
 
 **Kilde:** https://www.audiomicro.com
+
+React dokumentasjon: https://reactjs.org/docs/getting-started.html
