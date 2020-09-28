@@ -78,9 +78,9 @@ Viewport kommer integrert i React i index.html filen i public-mappen. Dette er b
 
 ## Git
 
-Vi valgte å lage en egen branch (dev) som vi brukte i utviklingsfasen til prosjektet. Denne ble brukt til å lage nye brancher ut fra og til å merge branchene inn i. Dette var for å unngå å ha et uferdig prosjekt i master. Vi prøvde å gi branchene navn som beskrev det vi jobbet med. Vi var også veldig nøye med å ikke jobbe i samme brancher, som gjorde at vi unngikk større problemer under merge. 
+Vi valgte å lage en egen branch (dev) som vi brukte i utviklingsfasen til prosjektet. Denne ble brukt til å lage nye brancher ut fra og til å merge branchene inn i. Dette var for å unngå å ha et uferdig prosjekt i master. Vi prøvde å gi branchene navn som beskrev det vi jobbet med. Vi var også veldig nøye med å ikke jobbe i samme branch, som gjorde at vi unngikk større problemer under merge. 
 
-Vi la inn mindre oppgaver vi måtte gjøre som issues i GitLab underveis i prosjektet. Dermed hadde vi alltid god oversikt over hvilke oppgaver vi ikke hadde gjort enda. Når vi hadde jobbet med disse oppgavene refererte vi til issuens id i commit meldingen. 
+Vi la inn oppgaver vi måtte gjøre underveis i prosjektet som issues i GitLab. Dermed hadde vi alltid god oversikt over hvilke oppgaver vi ikke hadde gjort enda, og hva vi jobbet med akkuart nå. Når vi hadde jobbet med disse oppgavene og skulle pushe det til Gitlab refererte vi til issuens id i commit meldingen. 
 
 
 ## Kilder
