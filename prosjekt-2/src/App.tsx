@@ -38,16 +38,18 @@ function App(props: Props) {
     poemProvider.setActivePoem(Number(localStorage.getItem('favorittPoem')));
   };
 
+  const setFavoriteSound = () => {
+    sessionStorage.setItem("favoriteSound", soundProvider.activeSound.toString());
+  }
 
-  // const getLastPicture = () => {
-  //   if(sessionStorage.getItem("favorittTab")===null){
-  //     return(
-  //       alert("Du har ikke laget en favoritt enda")
-  //     )
-  //   }
-  //   tabProvider.setActiveTab(Number(sessionStorage.getItem('lastPictureTab')));
-  //   imgProvider.setActiveImg(Number(sessionStorage.getItem('lastPictureMenu')));
-  // };
+  const getFavoriteSound = () => {
+      if(sessionStorage.getItem("favoriteSound")===null){
+       return(
+          alert("Du har ikke laget en favoritt enda")
+      )
+    }
+    soundProvider.setActiveSound(Number(sessionStorage.getItem("favoriteSound")))
+  }
 
   return (
     <div className={`App ${darkMode ? 'darkBody' : ''}`}>
@@ -75,6 +77,12 @@ function App(props: Props) {
           <button className="button2" onClick={() => setDarkmode(!darkMode)}> 
           Change theme
           </button>
+        </div>
+        <div className="buttonContainer2">
+        <div className="fav1">
+          <button className="button2" onClick={setFavoriteSound}>Save favorite sound</button>
+          <button className="button2" onClick={getFavoriteSound}>Get favorite sound</button>
+        </div>
         </div>
       </div>
     </div>
