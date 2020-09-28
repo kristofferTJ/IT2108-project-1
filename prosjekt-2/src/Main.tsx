@@ -36,13 +36,14 @@ function Main() {
         <div className="image">
           {getImage[imgProvider.activeImg - 1][tabProvider.activeTab - 1]}
         </div>
-      </div>
+        </div>
       <div className="PoemAndSound">
+        <div className="poem">
         <Poem
           tabNumb={tabProvider.activeTab}
           menuNumb={poemProvider.activePoem}
         ></Poem>
-
+        </div>
         <div>
           <audio src={audio!} controls id="audiobar"></audio>
         </div>

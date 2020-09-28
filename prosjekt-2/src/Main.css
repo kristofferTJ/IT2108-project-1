@@ -1,37 +1,32 @@
 .installations {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .imagediv{
+   
+}
+
+.image{ 
     background-color: white;
     width: 550px;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
     border-radius: 30px;
-}
-
-.image{ 
     align-self: flex-start
 }
 
 .poem{
+    width: 550px;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
     border-radius: 30px;
     background-color: white;
-    /* border-color: #282c34;  */
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
 #audiobar{
     height: 40px;
@@ -51,12 +46,17 @@
 
   /* for iphone */
 @media only screen and (max-width: 600px) {
-    .imagediv{
+    .image{
       width: 280px;
-      height: 200px;
+      height: 220px;
     }
 
-     .installations{
+    .poem{
+        width: 280px;
+        /* height: 100px; */
+    }
+
+    .installations{
         height: 300px; 
     } 
 
