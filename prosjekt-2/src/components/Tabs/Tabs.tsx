@@ -7,13 +7,13 @@ function Tabs() {
 
   return (
     <div className="buttonContainer">
-      <button className="button" onClick={() => tabProvider.setActiveTab(1)}>
+      <button className={`button ${tabProvider.activeTab === 1 ? 'activeButton' : ''}`} onClick={() => tabProvider.setActiveTab(1)}>
         1
       </button>
-      <button className="button" onClick={() => tabProvider.setActiveTab(2)}>
+      <button className={`button ${tabProvider.activeTab === 2 ? 'activeButton' : ''}`} onClick={() => tabProvider.setActiveTab(2)}>
         2
       </button>
-      <button className="button" onClick={() => tabProvider.setActiveTab(3)}>
+      <button className={`button ${tabProvider.activeTab === 3 ? 'activeButton' : ''}`} onClick={() => tabProvider.setActiveTab(3)}>
         3
       </button>
     </div>

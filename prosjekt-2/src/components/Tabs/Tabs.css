@@ -14,11 +14,16 @@
     font-size: 14px;
     font-family: Verdana;
     margin: 4px 2px;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+}
+
+.activeButton {
+  background-color: #059ee6;
+  opacity: 1;
 }
 
 .button:hover {
