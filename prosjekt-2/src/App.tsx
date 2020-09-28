@@ -35,9 +35,20 @@ function App(props:Props) {
   };
 
   const getLastPicture = () => {
-    setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
-    imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
+    const session = sessionStorage.getItem("fargebytte")
+    if (session === "false" || session === null) {
+      sessionStorage.setItem("fargebytte", "true");
+    }
+    else {
+      sessionStorage.setItem("fargebytte", "false");
+    }
+
   }
+
+  // const getLastPicture = () => {
+  //   setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
+  //   imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
+  // }
 
   return (
     <div className="App">

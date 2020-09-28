@@ -23,8 +23,6 @@ export default class Header extends Component<Props, any> {
 
   }
 
-
-
   render() {
     return(
       <div>
@@ -38,16 +36,3 @@ export default class Header extends Component<Props, any> {
   }
   
 }
-//   const [isOpen, setOpen] = useState(false)
-
-
-//   return (
-//     <div>
-//       <header className='header'>
-//           <h1 className='title'>Acitvity Gallery</h1>
-//           <Burger setOpen={setOpen} isOpen={isOpen}></Burger>
-//       </header>
-//       <Burgermenu isOpen={isOpen}></Burgermenu> 
-//     </div>
-//   );
-// }
