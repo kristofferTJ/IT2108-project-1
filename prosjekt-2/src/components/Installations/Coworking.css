@@ -1,9 +1,9 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
 #Plant {
-    width:200px;
-    height:200px;
-    animation: colorChange 3s infinite;
+  width: 200px;
+  height: 200px;
+  animation: colorChange 3s infinite;
 }
