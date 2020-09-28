@@ -67,14 +67,23 @@ Vi eier ikke SVG bildene, de er hentet herfra:
 **Kilde:** https://undraw.co/illustrations
 
 **Bildenavn:**
-Basketball
-Grand slam 
+
+Basketball 
+
+Grand slam
+
 Junior soccer
+
 Shared workspace
+
 On the office
+
 Working from anywhere
+
 Partying
+
 Having fun
+
 Festivities
 
 Lydfilene er hentet herfra:
