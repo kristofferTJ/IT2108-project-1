@@ -1,4 +1,4 @@
-.burgerBar {
+.burgerBar1 {
     transition: 0.3s; 
     margin-top: 2.5px;
     margin-bottom: 2.5px;
@@ -6,16 +6,63 @@
     margin: 5px;
     width: 40px;
     height: 5px;
-  }
-
-  .burgermenuContainer:hover {
-    cursor: pointer;
 }
 
-  @media only screen and (max-width: 600px) {
-    .burgerBar{
-        width: 25px;
-        height: 3px;
-        margin: 3px;
-    }
-  }
+.burgerBar2 {
+    transition: 0.3s; 
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    background-color: beige;
+    margin: 5px;
+    width: 40px;
+    height: 5px;
+}
+
+.burgerBar3 {
+    transition: 0.3s; 
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    background-color: beige;
+    margin: 5px;
+    width: 40px;
+    height: 5px;
+}
+
+.burgerCross1 {
+  transition: 0.3s; 
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  background-color: beige;
+  margin: 5px;
+  width: 40px;
+  height: 5px; 
+  transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.burgerCross2 {
+  transition: 0.3s; 
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  background-color: beige;
+  margin: 5px;
+  width: 40px;
+  height: 5px;
+  opacity: 0;
+}
+
+.burgerCross3 {
+  transition: 0.3s; 
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  background-color: beige;
+  margin: 5px;
+  width: 40px;
+  height: 5px;
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.burgermenuContainer:hover {
+  cursor: pointer;
+}
+
+  

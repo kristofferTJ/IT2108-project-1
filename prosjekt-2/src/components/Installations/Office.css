@@ -2,14 +2,8 @@ body{
     text-align: center;
 }
 
-@keyframes colorChange {
-    0%{fill:white}
-    50%{fill:#000}
-    100%{fill: white}
-}
-
 #Screen {
     width:200px;
-    height:200px;
+    height:200px; 
     animation: colorChange 3s infinite;
 }
