@@ -85,7 +85,7 @@ Vi la inn oppgaver vi måtte gjøre underveis i prosjektet som issues i GitLab. 
 
 ## Kilder
 
-Vi eier ikke SVG bildene, de er hentet herfra:
+**Vi eier ikke SVG bildene, de er hentet herfra:**
 
 **Kilde:** https://undraw.co/illustrations
 
@@ -109,8 +109,8 @@ Having fun
 
 Festivities
 
-Lydfilene er hentet herfra:
+**Lydfilene er hentet herfra:**
 
 **Kilde:** https://www.audiomicro.com
 
-React dokumentasjon: https://reactjs.org/docs/getting-started.html
+**React dokumentasjon:** https://reactjs.org/docs/getting-started.html
