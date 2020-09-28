@@ -23,7 +23,12 @@ function App(props: Props) {
     localStorage.setItem('favorittPoem', poemProvider.activePoem.toString());
   };
 
-  const getFavoritt = () => {
+  const getFavoritt = () => { 
+    if(localStorage.getItem("favorittTab")===undefined){
+      return(
+        alert("Du har ikke laget en favoritt enda")
+      )
+    }
     tabProvider.setActiveTab(Number(localStorage.getItem('favorittTab')));
     imgProvider.setActiveImg(Number(localStorage.getItem('FavorittMenu')));
     soundProvider.setActiveSound(Number(localStorage.getItem('favorittSound')));
@@ -31,6 +36,11 @@ function App(props: Props) {
   };
 
   const getLastPicture = () => {
+    if(sessionStorage.getItem("favorittTab")===null){
+      return(
+        alert("Du har ikke laget en favoritt enda")
+      )
+    }
     tabProvider.setActiveTab(Number(sessionStorage.getItem('lastPictureTab')));
     imgProvider.setActiveImg(Number(sessionStorage.getItem('lastPictureMenu')));
   };
