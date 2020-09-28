@@ -7,11 +7,14 @@ interface Props{
 }
 
 export default function Burger(props: Props) {
+
+  const className = props.isOpen ? "burgerCross" : "burgerBar";
+
   return (
     <div className="burgermenuContainer" onClick={() => props.setOpen(!props.isOpen)}>
-        <div className="burgerBar"></div>
-        <div className="burgerBar"></div>
-        <div className="burgerBar"></div>
+        <div className= {className + '1'}></div>
+        <div className={className + '2'}></div>
+        <div className={className + '3'}></div>
     </div> 
   );
 }

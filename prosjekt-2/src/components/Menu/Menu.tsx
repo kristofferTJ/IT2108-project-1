@@ -49,19 +49,19 @@ function Sidebar() {
           className="catagories"
           onClick={() => poemProvider.setActivePoem(1)}
         >
-          Poem 1
+          Autum 
         </button>
         <button
           className="catagories"
           onClick={() => poemProvider.setActivePoem(2)}
         >
-          Poem 2
+          Winter
         </button>
         <button
           className="catagories"
           onClick={() => poemProvider.setActivePoem(3)}
         >
-          Poem 3
+          Spring
         </button>
       </div>
     </div>
