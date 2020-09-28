@@ -1,77 +1,84 @@
 .installations {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.imagediv{
+ .imagediv{
+    display: flex;
+    justify-content: center;
+} 
+
+ .PoemAndSound{ 
+    display: flex;
+    flex-direction: column;
+   
+} 
+
+.spaceBetween{
+    width: 20px;
+    height: 20px;
+}
+
+.image{ 
     background-color: white;
     width: 550px;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
     border-radius: 30px;
-}
-
-.image{ 
     align-self: flex-start
 }
 
+.poemdiv{
+    display: flex;
+    justify-content: center;
+}
+
 .poem{
+    display: block;
+    width: 520px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: Verdana;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
     border-radius: 30px;
-    background-color: white;
-    /* border-color: #282c34;  */
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-color: white; 
 }
 
 #audiobar{
     height: 40px;
 }
 
-@media only screen and (max-width: 1000px) {
+/* for ipad and smaller desktop screen */
+@media only screen and (max-width: 1125px) {
     .installations{
       flex-direction: column;
-    }
-    .image{
-        order: 1
-    }
-    .poem{
-        order: 2
+      justify-content: center;
     }
   }
 
-  /* for iphone */
+/* for iphone */
 @media only screen and (max-width: 600px) {
-    .imagediv{
+    .image{
       width: 280px;
-      height: 200px;
+      height: 220px;
     }
 
-     .installations{
-        height: 300px; 
-    } 
+    .poem{
+        width: 240px;
+        font-size: 10px;
+    }
 
     svg{
         width: 250px;
-        height: 200px;
-    }
-
-    .PoemAndSound{
-        width: 280px;
+        height: 220px;
     }
 
     #audiobar{
         width: 200px; 
         height: 20px;
-    }
-     
+    }   
   }

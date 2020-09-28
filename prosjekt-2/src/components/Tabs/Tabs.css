@@ -30,8 +30,4 @@
     .buttonContainer{
       flex-direction: row;
     }
-    .button{
-        height: 20px; 
-        font-size: 10px;
-    } 
   }
