@@ -49,6 +49,7 @@ h4 {
   color: #00B0FF;
 }
 
+/* for iphone */
 @media screen and (max-width: 600px) {
   .menu{
     width: 100px;

@@ -37,6 +37,7 @@ function Main() {
           {getImage[imgProvider.activeImg - 1][tabProvider.activeTab - 1]}
         </div>
         </div>  
+        <div className="spaceBetween"></div>
         <div className="PoemAndSound"> 
             <div className="poemdiv"> 
                 <div className="poem">
