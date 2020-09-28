@@ -47,7 +47,7 @@ export default class Poem extends Component<Props, State, any> {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      let t;
+      let t: string;
       var p =
         poems[(this.props.tabNumb - 1) * 3 + this.props.menuNumb - 1].lines;
       var str: string = '';
@@ -56,12 +56,8 @@ export default class Poem extends Component<Props, State, any> {
       }
       t = str.trim();
 
-      console.log(t);
-
       return (
-        <div 
-          key={(this.props.tabNumb - 1) * 3 + this.props.menuNumb - 1}
-        >
+        <div key={(this.props.tabNumb - 1) * 3 + this.props.menuNumb - 1}>
           {t}
         </div>
       );

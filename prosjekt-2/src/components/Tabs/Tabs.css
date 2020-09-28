@@ -1,8 +1,7 @@
-.buttonContainer{
-    display: flex;
-    justify-content: space-evenly;
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
-
 
 .button {
     background-color: #00B0FF;
@@ -27,12 +26,12 @@
 }
 
 .button:hover {
-    background-color: #059ee6;
-    opacity: 1;
+  background-color: #059ee6;
+  opacity: 1;
 }
 
-  @media only screen and (max-width: 600px) {
-    .buttonContainer{
-      flex-direction: row;
-    }
+@media only screen and (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: row;
   }
+}

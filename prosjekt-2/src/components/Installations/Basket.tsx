@@ -418,9 +418,9 @@ export default function Basket() {
           y2="14756.4"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -430,9 +430,9 @@ export default function Basket() {
           y2="21485.6"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
@@ -442,9 +442,9 @@ export default function Basket() {
           y2="21707.9"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -454,9 +454,9 @@ export default function Basket() {
           y2="13411"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint5_linear"
@@ -466,9 +466,9 @@ export default function Basket() {
           y2="11519.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint6_linear"
@@ -478,9 +478,9 @@ export default function Basket() {
           y2="31181.8"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -490,9 +490,9 @@ export default function Basket() {
           y2="30068.9"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint8_linear"
@@ -502,9 +502,9 @@ export default function Basket() {
           y2="25066.7"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint9_linear"
@@ -514,9 +514,9 @@ export default function Basket() {
           y2="6854.78"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint10_linear"
@@ -526,9 +526,9 @@ export default function Basket() {
           y2="6854.78"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint11_linear"
@@ -538,9 +538,9 @@ export default function Basket() {
           y2="6800.62"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint12_linear"
@@ -550,9 +550,9 @@ export default function Basket() {
           y2="66849"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#808080" stop-opacity="0.25" />
-          <stop offset="0.54" stop-color="#808080" stop-opacity="0.12" />
-          <stop offset="1" stop-color="#808080" stop-opacity="0.1" />
+          <stop stopColor="#808080" stopOpacity="0.25" />
+          <stop offset="0.54" stopColor="#808080" stopOpacity="0.12" />
+          <stop offset="1" stopColor="#808080" stopOpacity="0.1" />
         </linearGradient>
         <clipPath id="clip0">
           <rect width="600" height="473" fill="white" />

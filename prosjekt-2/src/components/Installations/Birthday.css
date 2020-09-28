@@ -1,22 +1,21 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    #Balloons {
-      animation: Up_and_down_balloons infinite 1s linear;
-      
-    }
+  #Balloons {
+    animation: Up_and_down_balloons infinite 1s linear;
   }
+}
 
 @keyframes Up_and_down_balloons {
-    0% {
-      transform: translateY(30px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(30px);
-    }
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
 }

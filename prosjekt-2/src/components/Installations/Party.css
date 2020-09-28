@@ -1,22 +1,21 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    #Fireworks {
-      animation: Up_and_down_party infinite 1s linear;
-      
-    }
+  #Fireworks {
+    animation: Up_and_down_party infinite 1s linear;
   }
+}
 
 @keyframes Up_and_down_party {
-    0% {
-      transform: translateY(20px);
-    }
-    50% {
-      transform: translateY(5px);
-    }
-    100% {
-        transform: translateY(20px);
-    }
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
