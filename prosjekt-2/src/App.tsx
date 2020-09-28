@@ -6,7 +6,7 @@ import Tabs from './components/Tabs/Tabs';
 import { tabsContext } from './components/Tabs/TabContext';
 import Header from './components/Header/Header';
 import Main from './Main';
-import ThemeProvider, {themes, useTheme} from './theme';
+
 
 
 
@@ -15,6 +15,7 @@ function App() {
     GlobalStateContext
   )!;
   const [activeTab, setActiveTab] = useState(1);
+  const [darkMode, setDarkmode] = useState(false);
 
 
   const favoritt = () => {
@@ -31,47 +32,18 @@ function App() {
     poemProvider.setActivePoem(Number(localStorage.getItem("favorittPoem")));
   };
 
-  // const getLastPicture = () => {
-  //   setActiveTab(Number(sessionStorage.getItem("lastPictureTab")));
-  //   imgProvider.setActiveImg(Number(sessionStorage.getItem("lastPictureMenu")));
-  // }
-
-  const {theme, setTheme} = useTheme()!;
-
-  const toggleTheme = () => {
-    switch(theme) {
-      case themes.blue:
-        setTheme(themes.pink);
-        sessionStorage.setItem("themes", "pink");
-        console.log(sessionStorage.getItem("themes"))
-        console.log("pink")
-        break;
-      case themes.pink:
-        setTheme(themes.green);
-        sessionStorage.setItem("themes", "green");
-        console.log(sessionStorage.getItem("themes"))
-        console.log("green")
-        break;
-      case themes.green:
-        setTheme(themes.blue);
-        sessionStorage.setItem("themes", "blue");
-        console.log(sessionStorage.getItem("themes"))
-        console.log("blue")
-        break;
-    }
-  }
+  console.log(darkMode);
 
   return (
-    <ThemeProvider>
-    <div className="App">
-      <div className="Header"><Header></Header></div> 
+    <div className={`App ${darkMode ? 'darkBody' : ''}`}>
+      <div className={`Header ${darkMode ? 'darkBody' : ''}`}><Header></Header></div> 
       <div className="Container">
         <tabsContext.Provider value={{ activeTab, setActiveTab }}>
         <Tabs></Tabs>
         <div className="space"></div>
         <div className="Main_and_sidebar">
           <div className="Main"> 
-            <Main></Main>
+            <Main />
           </div>
         </div>
         </tabsContext.Provider>
@@ -82,12 +54,11 @@ function App() {
             <button className="favorite" onClick={getFavoritt}>Get favorite</button>
           </div>
           <div className="fav2">
-            <button className="favorite" onClick={toggleTheme}>Change theme</button>
+            <button className="favorite" onClick={() => setDarkmode(!darkMode)}>Change theme</button>
           </div>
         </div>
       </div>
     </div>
-    </ThemeProvider>
 
   );
 }

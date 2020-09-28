@@ -73,10 +73,7 @@ export const themes = {
     }
 }
 
-const ThemeContext = React.createContext<IThemeContext | undefined> ({
-    theme: themes.blue,
-    setTheme: () => {},
-});
+export const ThemeContext = React.createContext<IThemeContext | undefined> (undefined);
 
 export function getCurrentTheme() {
     const prevTheme = localStorage.getItem("theme");
