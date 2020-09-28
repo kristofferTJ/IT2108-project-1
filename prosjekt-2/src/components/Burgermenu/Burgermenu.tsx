@@ -1,5 +1,5 @@
-import React from 'react';
-import Sidebar from '../Menu/Menu';
+import React from "react";
+import Sidebar from "../Menu/Menu";
 
 interface Props {
   isOpen: boolean;

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import { GlobalStateContext } from './context/GlobalStateContext';
@@ -15,6 +15,9 @@ function App(props: Props) {
   const { imgProvider, soundProvider, poemProvider, tabProvider } = useContext(
     GlobalStateContext
   )!;
+ 
+  const [darkMode, setDarkmode] = useState(false);
+
 
   const favoritt = () => {
     localStorage.setItem('favorittTab', tabProvider.activeTab.toString());
@@ -23,23 +26,34 @@ function App(props: Props) {
     localStorage.setItem('favorittPoem', poemProvider.activePoem.toString());
   };
 
-  const getFavoritt = () => {
+  const getFavoritt = () => { 
+    if(localStorage.getItem("favorittTab")===undefined){
+      return(
+        alert("Du har ikke laget en favoritt enda")
+      )
+    }
     tabProvider.setActiveTab(Number(localStorage.getItem('favorittTab')));
     imgProvider.setActiveImg(Number(localStorage.getItem('FavorittMenu')));
     soundProvider.setActiveSound(Number(localStorage.getItem('favorittSound')));
     poemProvider.setActivePoem(Number(localStorage.getItem('favorittPoem')));
   };
 
-  const getLastPicture = () => {
-    tabProvider.setActiveTab(Number(sessionStorage.getItem('lastPictureTab')));
-    imgProvider.setActiveImg(Number(sessionStorage.getItem('lastPictureMenu')));
-  };
+
+  // const getLastPicture = () => {
+  //   if(sessionStorage.getItem("favorittTab")===null){
+  //     return(
+  //       alert("Du har ikke laget en favoritt enda")
+  //     )
+  //   }
+  //   tabProvider.setActiveTab(Number(sessionStorage.getItem('lastPictureTab')));
+  //   imgProvider.setActiveImg(Number(sessionStorage.getItem('lastPictureMenu')));
+  // };
 
   return (
-    <div className="App">
-      <div className="Header">
-        <Header isOpen={props.isOpen} setOpen={props.setOpen}></Header>
-      </div>
+    <div className={`App ${darkMode ? 'darkBody' : ''}`}>
+      <div className={`Header ${darkMode ? 'darkBody' : ''}`}>
+        <Header isOpen={props.isOpen} setOpen={props.setOpen}>
+        </Header></div> 
       <div className="Container">
         <Tabs></Tabs>
         <div className="space"></div>
@@ -50,16 +64,16 @@ function App(props: Props) {
       <div className="space"></div>
       <div className="buttonContainer2">
         <div className="fav1">
-          <button className="favorite" onClick={favoritt}>
+          <button className="button2" onClick={favoritt}>
             Save favorite
           </button>
-          <button className="favorite" onClick={getFavoritt}>
+          <button className="button2" onClick={getFavoritt}>
             Get favorite
           </button>
         </div>
         <div className="fav2">
-          <button className="favorite" onClick={getLastPicture}>
-            Forrige bilde
+          <button className="button2" onClick={() => setDarkmode(!darkMode)}> 
+          Change theme
           </button>
         </div>
       </div>
