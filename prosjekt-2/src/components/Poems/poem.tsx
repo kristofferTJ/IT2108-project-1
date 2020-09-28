@@ -59,7 +59,7 @@ export default class Poem extends Component<Props, State, any> {
       console.log(t);
 
       return (
-        <div
+        <div 
           key={(this.props.tabNumb - 1) * 3 + this.props.menuNumb - 1}
         >
           {t}

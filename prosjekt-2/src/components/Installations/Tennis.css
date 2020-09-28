@@ -4,17 +4,17 @@ body{
 
 @media (prefers-reduced-motion: no-preference) {
     #Tennisball {
-      animation: Up_and_down infinite 2s linear;
+      animation: Up_and_down_tennis infinite 2s linear;
       
     }
   }
 
-@keyframes Up_and_down {
+@keyframes Up_and_down_tennis {
     0% {
       transform: translateY(50px);
     }
     50% {
-      transform: translateY(-90px);
+      transform: translateY(-60px);
     }
     100% {
         transform: translateY(50px);

@@ -32,22 +32,25 @@ function Main() {
 
   return (
     <div className="installations">
-      <div className="imagediv">
+        <div className="imagediv">   
         <div className="image">
           {getImage[imgProvider.activeImg - 1][tabProvider.activeTab - 1]}
         </div>
-        </div>
-      <div className="PoemAndSound">
-        <div className="poem">
-        <Poem
-          tabNumb={tabProvider.activeTab}
-          menuNumb={poemProvider.activePoem}
-        ></Poem>
-        </div>
-        <div>
-          <audio src={audio!} controls id="audiobar"></audio>
-        </div>
-      </div>
+        </div>  
+        <div className="PoemAndSound"> 
+            <div className="poemdiv"> 
+                <div className="poem">
+                <Poem
+                tabNumb={tabProvider.activeTab}
+                menuNumb={poemProvider.activePoem}
+                ></Poem>
+                </div>
+            </div>
+            <div>
+            <audio src={audio!} controls id="audiobar"></audio>
+            </div>
+        </div> 
+      
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import './App.css';
-import Poem from './components/Poems/poem';
 import Header from './components/Header/Header';
 import { GlobalStateContext } from './context/GlobalStateContext';
 import './App.css';
@@ -44,26 +43,18 @@ function App(props: Props) {
       <div className="Container">
         <Tabs></Tabs>
         <div className="space"></div>
-        <div className="Main_and_sidebar"></div>
         <div className="Main">
           <Main></Main>
         </div>
       </div>
-      {/* <div>
-        <Poem
-          tabNumb={tabProvider.activeTab}
-          menuNumb={poemProvider.activePoem}
-        />
-      </div> */}
-
       <div className="space"></div>
       <div className="buttonContainer2">
         <div className="fav1">
           <button className="favorite" onClick={favoritt}>
-            Lagre som favorittbilde
+            Save favorite
           </button>
           <button className="favorite" onClick={getFavoritt}>
-            Få favorittbilde
+            Get favorite
           </button>
         </div>
         <div className="fav2">

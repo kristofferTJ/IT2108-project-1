@@ -4,9 +4,16 @@
     justify-content: center;
 }
 
-.imagediv{
+ .imagediv{
+    display: flex;
+    justify-content: center;
+} 
+
+ .PoemAndSound{ 
+    display: flex;
+    flex-direction: column;
    
-}
+} 
 
 .image{ 
     background-color: white;
@@ -18,29 +25,32 @@
     align-self: flex-start
 }
 
+.poemdiv{
+    display: flex;
+    justify-content: center;
+}
+
 .poem{
-    width: 550px;
+    display: block;
+    width: 520px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: Verdana;
     border-style: solid;
     border-color: #282d33;
     border-width: 3px;
     border-radius: 30px;
-    background-color: white;
+    background-color: white; 
 }
-
 
 #audiobar{
     height: 40px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1125px) {
     .installations{
       flex-direction: column;
-    }
-    .image{
-        order: 1
-    }
-    .poem{
-        order: 2
+      justify-content: center;
     }
   }
 
@@ -52,8 +62,8 @@
     }
 
     .poem{
-        width: 280px;
-        /* height: 100px; */
+        width: 240px;
+        font-size: 10px;
     }
 
     .installations{
@@ -62,11 +72,7 @@
 
     svg{
         width: 250px;
-        height: 200px;
-    }
-
-    .PoemAndSound{
-        width: 280px;
+        height: 220px;
     }
 
     #audiobar{
