@@ -20,7 +20,6 @@ export default class Header extends Component<Props, any> {
 
   setOpen() {
     this.setState({isOpen: !this.state.isOpen})
-
   }
 
   render() {
@@ -34,5 +33,4 @@ export default class Header extends Component<Props, any> {
     </div>
     )
   }
-  
 }

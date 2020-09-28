@@ -18,7 +18,6 @@ function App(props: Props) {
  
   const [changeTheme, setchangeTheme] = useState(false);
 
-
   const favoritt = () => {
     localStorage.setItem('favorittTab', tabProvider.activeTab.toString());
     localStorage.setItem('FavorittMenu', imgProvider.activeImg.toString());
@@ -53,9 +52,8 @@ function App(props: Props) {
 
   return (
     <div className={`App ${changeTheme ? 'darkBody' : ''}`}>
-      <div className={`Header ${changeTheme ? 'pinkHeader' : ''}`}>
-        <Header isOpen={props.isOpen} setOpen={props.setOpen}>
-        </Header></div> 
+      <Header isOpen={props.isOpen} setOpen={props.setOpen}>
+      </Header>
       <div className="Container">
         <Tabs></Tabs> 
         <div className="space"></div>
@@ -67,10 +65,10 @@ function App(props: Props) {
       <div className="buttonContainer2">
         <div className="fav1">
           <button className="button2" onClick={favoritt}>
-            Save favorite
+            Save favorite installation
           </button>
           <button className="button2" onClick={getFavoritt}>
-            Get favorite
+            Get favorite installation
           </button>
         </div>
         <div className="fav2">
