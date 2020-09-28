@@ -65,12 +65,6 @@ export default class Poem extends Component<Props, State, any> {
           {t}
         </div>
       );
-
-      // return (
-      //   <div key={this.props.tabNumb * 3 + this.props.menuNumb - 1}>
-      //     {poems[this.props.tabNumb * 3 + this.props.menuNumb - 1].lines}
-      //   </div>
-      // );
     }
   }
 }

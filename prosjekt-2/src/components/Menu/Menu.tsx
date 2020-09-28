@@ -18,7 +18,6 @@ function Sidebar() {
           Work
         </button>
         <button className="catagories" onClick={() => {sessionStorage.setItem('lastPictureMenu', imgProvider.activeImg.toString()); imgProvider.setActiveImg(3)}}>
-          {' '}
           Social
         </button>
       </div>
