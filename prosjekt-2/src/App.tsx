@@ -26,7 +26,7 @@ function App(props: Props) {
   };
 
   const getFavoritt = () => { 
-    if(localStorage.getItem("favorittTab")===undefined){
+    if(localStorage.getItem("favorittTab")===null){
       return(
         alert("Du har ikke laget en favoritt enda")
       )

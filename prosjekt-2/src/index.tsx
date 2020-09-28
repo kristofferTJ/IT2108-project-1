@@ -17,3 +17,4 @@ import GlobalStateProvider from './context/GlobalStateContext';
   
   serviceWorker.unregister();
 
+  
