@@ -9,7 +9,6 @@ import Main from './Main';
 
 
 
-
 function App() {
   const { imgProvider, soundProvider, poemProvider } = useContext(
     GlobalStateContext
@@ -32,8 +31,6 @@ function App() {
     poemProvider.setActivePoem(Number(localStorage.getItem("favorittPoem")));
   };
 
-  console.log(darkMode);
-
   return (
     <div className={`App ${darkMode ? 'darkBody' : ''}`}>
       <div className={`Header ${darkMode ? 'darkBody' : ''}`}><Header></Header></div> 
@@ -50,11 +47,11 @@ function App() {
         <div className="space"></div>
         <div className="buttonContainer2">
           <div className="fav1">
-            <button className="favorite" onClick={favoritt}>Save favorite</button>
-            <button className="favorite" onClick={getFavoritt}>Get favorite</button>
+            <button className="button2" onClick={favoritt}>Save favorite</button>
+            <button className="button2" onClick={getFavoritt}>Get favorite</button>
           </div>
           <div className="fav2">
-            <button className="favorite" onClick={() => setDarkmode(!darkMode)}>Change theme</button>
+            <button className="button2" onClick={() => setDarkmode(!darkMode)}>Change theme</button>
           </div>
         </div>
       </div>
