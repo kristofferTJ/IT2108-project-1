@@ -33,6 +33,8 @@ Siden bruk av klasser er et krav i dette prosjektet har vi brukt det også, det 
 
 For å holde orden på staten i applikasjonen valgte vi å bygge ut en global state context. Ettersom komponenthirakiet økte i kompleksitet fremsto dette som et gunstigere alternativ enn å sende gjennom props for å sikre en konsis state i applikasjonen. Svært mange av komponentene var avhengig av hverandres state noe som var enda et argument for å lage en global state som holdt en felles oversikt i applikasjonen og sørget for riktig tilstand.
 
+![Komponent hierarki](./public/Hierarki.PNG "Komponent hierarki")
+
 Her mangler bilde og oversikt over komponenter
 
 ## Lagring med HTML Web Storage
