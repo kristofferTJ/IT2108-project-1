@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="buttonContainer"
+>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    3
+  </button>
+</div>
+`;

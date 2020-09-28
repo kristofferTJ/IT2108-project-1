@@ -1,0 +1,66 @@
+.menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 150px;
+  align-items: flex-start;
+  background-color: #282c34;
+  opacity: 0.9;
+}
+
+.catagories {
+  background-color: #282c34;
+  width: 130px;
+  height: 40px;
+  border: none;
+  color: beige;
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.catagories:hover {
+  opacity: 1;
+}
+
+.pictureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.soundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.poemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h4 {
+  font-family: sans-serif;
+  color: #00b0ff;
+}
+
+/* for iphone */
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100px;
+  }
+  .catagories {
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 70%;
+  }
+}

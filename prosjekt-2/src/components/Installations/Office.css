@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+}
+
+#Screen {
+  width: 200px;
+  height: 200px;
+  animation: colorChange 3s infinite;
+}

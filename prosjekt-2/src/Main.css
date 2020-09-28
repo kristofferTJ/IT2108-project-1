@@ -1,0 +1,84 @@
+.installations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ .imagediv{
+    display: flex;
+    justify-content: center;
+} 
+
+ .PoemAndSound{ 
+    display: flex;
+    flex-direction: column;
+   
+} 
+
+.spaceBetween{
+    width: 20px;
+    height: 20px;
+}
+
+.image{ 
+    background-color: white;
+    width: 550px;
+    border-style: solid;
+    border-color: #282d33;
+    border-width: 3px;
+    border-radius: 30px;
+    align-self: flex-start
+}
+
+.poemdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.poem{
+    display: block;
+    width: 520px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: Verdana;
+    border-style: solid;
+    border-color: #282d33;
+    border-width: 3px;
+    border-radius: 30px;
+    background-color: white; 
+}
+
+#audiobar{
+    height: 40px;
+}
+
+/* for ipad and smaller desktop screen */
+@media only screen and (max-width: 1125px) {
+    .installations{
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+/* for iphone */
+@media only screen and (max-width: 600px) {
+    .image{
+      width: 280px;
+      height: 220px;
+    }
+
+    .poem{
+        width: 240px;
+        font-size: 10px;
+    }
+
+    svg{
+        width: 250px;
+        height: 220px;
+    }
+
+    #audiobar{
+        width: 200px; 
+        height: 20px;
+    }   
+  }

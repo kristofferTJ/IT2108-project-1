@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #Man {
+    animation: Up_and_down_basket infinite 2s linear;
+  }
+}
+
+@keyframes Up_and_down_basket {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
