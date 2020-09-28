@@ -2,11 +2,6 @@ body{
     text-align: center;
 }
 
-@keyframes colorChange {
-    0%{fill:#00B0FF}
-    50%{fill:rgb(94, 231, 112)}
-    100%{fill: #00B0FF}
-}
 #Plant {
     width:200px;
     height:200px;

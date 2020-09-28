@@ -4,12 +4,12 @@ body{
 
 @media (prefers-reduced-motion: no-preference) {
     #Birds {
-      animation: Up_and_down infinite 2s linear;
+      animation: Up_and_down_birds infinite 2s linear;
       
     }
   }
 
-@keyframes Up_and_down {
+@keyframes Up_and_down_birds {
     0% {
       transform: translateY(20px);
     }
