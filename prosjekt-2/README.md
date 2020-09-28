@@ -1,44 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduksjon
 
-## Available Scripts
+Utstillingen på nettsiden består av 9 ulike bilder med animasjon, 9 ulike dikt og 3 ulike lyder. Brukeren kan øverst på siden velge mellom 3 ulike installasjoner i samme kategori. I tillegg kan man i menyen på siden velge mellom 3 ulike kategorier for både bilde, lyd og dikt. Nederst på siden kan brukeren lagre sin favoritt kombinasjon av bilde, lyd og dikt, og få denne tilbake igjen. Brukeren kan også lagre kun sin favoritt lyd og hente denne tilbake igjen. I tillegg er det en knapp nederst på siden som kan brukes for å endre mellom 2 ulike fargetemaer for nettsiden. 
 
-In the project directory, you can run:
 
-### `npm start`
+**Hvordan kjøre prosjektet**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Gå inn på linken: https://gitpod.idi.ntnu.no/#https://gitlab.stud.idi.ntnu.no/it2810-h20/team-41/prosjekt-2
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I terminalen nederst på siden må du kjøre disse kommandoene for å starte nettsiden:
 
-### `npm test`
+	cd prosjekt-2
+	npm install
+	npm start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Teknologi
 
-### `npm run build`
+**React**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prosjektet vårt benytter seg av React med både klasser og funksjonelle komponenter implementert med TSX.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Fetch med AJAX**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fetch APIet tilbyr et grensesnitt for javascript for å aksesserer og manipulere deler av pipelinen til HTTP, slik som request og response. Nettsiden tar bruk av den innebygde fetch-funksjonen i javascript, for å hente diktene fra APIet PoetryDB. Responsen parses om til JSON slik at dataen enkelt kan manipuleres og sendes ut på siden. For å unngå å gjøre mange kall til PoetryDB henter vi alle 9 diktene som vi ønsker i ett kall. Diktene lagres i staten til komponenten. Dette resulterer i få kall med bruk av fetch og derfor også lite ventetid på at kallene til databasen skal fullføres.
 
-### `npm run eject`
+## React komponent hierarki
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Vi fant tidlig ut av at det er funksjonelle komponenter som er en trend innen bruk av React, og at det er populært blant annet annet fordi det er raskere å utvikle, enklere å teste og fører ofte til kortere kode. Vi har derfor valgt å bruke funksjonelle komponenter mest i dette prosjektet. Dette ga oss mulighetene til å bruke hooks, og spesielt context, som var praktisk fordi det ga oss tilgang til alt av state i alle filer uten å måtte sende props gjennom hele hierarkiet vårt. Tidligere hadde man ikke tilgang til state i funksjonelle komponenter, og det var derfor vanlig å bruke klasser istedenfor, men dette endret seg når man kunne bruke hooks. 
+Siden bruk av klasser er et krav i dette prosjektet har vi brukt det også, det er brukt i filene Poem og Header.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Global State Context**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For å holde orden på staten i applikasjonen valgte vi å bygge ut en global state context. Ettersom komponenthirakiet økte i kompleksitet fremsto dette som et gunstigere alternativ enn å sende gjennom props for å sikre en konsis state i applikasjonen. Svært mange av komponentene var avhengig av hverandres state noe som var enda et argument for å lage en global state som holdt en felles oversikt i applikasjonen og sørget for riktig tilstand.
 
-## Learn More
+Her mangler bilde og oversikt over komponenter
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Lagring med HTML Web Storage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Vi har laget mulighet for lagring med både Local Storage og Session Storage.
+
+Vi har brukt Local Storage til å la brukeren kunne lagre sin favoritt installasjon. Da lagres kombinasjonen av bilde, lyd og dikt, og dette kan brukeren finne tilbake til ved å trykke på “Get favorite installation”. Hvis brukeren trykker på “Get favorite installation” før den har lagret en favoritt, vil den få beskjed om at den må lagre en favoritt installasjon først.
+
+Session Storage har vi brukt til å la brukeren kunne lagre sin favoritt lyd og hente denne tilbake igjen senere. Her vil brukeren også få opp en beskjed om at den må lagre en favoritt først dersom brukeren prøver å hente ut favoritt lyden før den har lagret en. 
+
+## Testing
+
+Vi har brukt snapshot testing på komponentene Basket, Tabs og Burger. Disse ligger i en egen test mappe, og er kjørt lokalt på pc-en ved å skrive npm test i terminalen. De fungerer som de skal alle sammen, og har ingen feil når de kjøres. Siden det ikke skulle legges vekt på omfanget av testingen, men at man har forstått prinsippet, mente vi at det ikke var nødvendig å lage sammen test for flere av filene. Men hvis det skulle vært gjort kunne resten av komponentene vært testet på akkurat samme måte.
+
+**Testing av responsiv design på ulike enheter**
+
+
+**Enheter som har blitt testet på**
+
+## Responsiv web design
+
+## Git
+
+Vi valgte å lage en egen branch (dev) som vi brukte i utviklingsfasen til prosjektet. Denne ble brukt til å lage nye brancher ut fra og til å merge branchene inn i. Dette var for å unngå å ha et uferdig prosjekt i master. Vi prøvde å gi branchene navn som beskrev det vi jobbet med. Vi var også veldig nøye med å ikke jobbe i samme brancher, som gjorde at vi unngikk større problemer under merge. 
+Vi la inn mindre oppgaver vi måtte gjøre som issues i GitLab underveis i prosjektet. Dermed hadde vi alltid god oversikt over hvilke oppgaver vi ikke hadde gjort enda. Når vi hadde jobbet med disse oppgavene refererte vi til issuens id i commit meldingen. 
+
+
+## Kilder
+
+Vi eier ikke SVG bildene, de er hentet herfra:
+
+**Kilde:** https://undraw.co/illustrations
+
+**Bildenavn:**
+
+Basketball 
+
+Grand slam
+
+Junior soccer
+
+Shared workspace
+
+On the office
+
+Working from anywhere
+
+Partying
+
+Having fun
+
+Festivities
+
+Lydfilene er hentet herfra:
+
+**Kilde:** https://www.audiomicro.com
